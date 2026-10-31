@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "id": "apob-range-at-fixed-ldl",
+  "evidence_id": "sniderman-2024-apob-discordance",
+  "rows": [
+    {
+      "row_id": "r1",
+      "claim_id": "apob-range-ldl70",
+      "group": "LDL-C 70 mg/dL",
+      "label": "LDL-C 70",
+      "series": "apoB ~95% range"
+    },
+    {
+      "row_id": "r2",
+      "claim_id": "apob-range-ldl100",
+      "group": "LDL-C 100 mg/dL",
+      "label": "LDL-C 100",
+      "series": "apoB ~95% range"
+    },
+    {
+      "row_id": "r3",
+      "claim_id": "apob-range-ldl130",
+      "group": "LDL-C 130 mg/dL",
+      "label": "LDL-C 130",
+      "series": "apoB ~95% range"
+    },
+    {
+      "row_id": "r4",
+      "claim_id": "apob-range-ldl160",
+      "group": "LDL-C 160 mg/dL",
+      "label": "LDL-C 160",
+      "series": "apoB ~95% range"
+    },
+    {
+      "row_id": "r5",
+      "claim_id": "apob-range-ldl190",
+      "group": "LDL-C 190 mg/dL",
+      "label": "LDL-C 190",
+      "series": "apoB ~95% range"
+    }
+  ],
+  "title": "ApoB varies widely among people with the same LDL-C",
+  "chart_type": "range_bars",
+  "data_file": "apob-range-at-fixed-ldl.csv",
+  "x_label": "LDL-C level (mg/dL)",
+  "y_label": "apoB (mg/dL)",
+  "caption": "Range of apoB values that captures about 95% of UK Biobank participants at each LDL-C level (mean ± 2 SD of apoB at that LDL-C). Bounds as reported in the Results text.",
+  "reading_note": "These are population distributions at baseline, not risks. The bars show how much apoB can differ between two people whose LDL-C is the same."
+}

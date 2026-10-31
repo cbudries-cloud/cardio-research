@@ -1,0 +1,429 @@
+{
+ "source": "American Heart Association PREVENT Online Calculator, https://professional.heart.org/en/guidelines-and-statements/prevent-calculator",
+ "retrieved": "2026-10-21",
+ "method": "Synthetic profiles entered by browser automation; displayed values read from the page. The page stated 'The risk estimates were calculated using the base equations' for every case.",
+ "display_precision": "percent, one decimal place; a trailing .0 is not shown (e.g. '2%')",
+ "thirty_year_display": "no 30-year estimate shown at age 60 and over (recorded as null)",
+ "cases": [
+  {
+   "id": 1,
+   "inputs": {
+    "sex": "male",
+    "age": 50,
+    "sbp": 120,
+    "total_c": 200,
+    "hdl_c": 50,
+    "egfr": 90,
+    "bmi": 25,
+    "diabetes": false,
+    "smoking": false,
+    "statin": false,
+    "bp_tx": false
+   },
+   "expected_percent": {
+    "total_cvd": {
+     "10": 2.7,
+     "30": 17.8
+    },
+    "ascvd": {
+     "10": 1.9,
+     "30": 11.5
+    },
+    "heart_failure": {
+     "10": 1.0,
+     "30": 7.9
+    }
+   }
+  },
+  {
+   "id": 2,
+   "inputs": {
+    "sex": "female",
+    "age": 50,
+    "sbp": 120,
+    "total_c": 200,
+    "hdl_c": 50,
+    "egfr": 90,
+    "bmi": 25,
+    "diabetes": false,
+    "smoking": false,
+    "statin": false,
+    "bp_tx": false
+   },
+   "expected_percent": {
+    "total_cvd": {
+     "10": 2.0,
+     "30": 14.5
+    },
+    "ascvd": {
+     "10": 1.3,
+     "30": 8.7
+    },
+    "heart_failure": {
+     "10": 0.7,
+     "30": 6.2
+    }
+   }
+  },
+  {
+   "id": 3,
+   "inputs": {
+    "sex": "female",
+    "age": 30,
+    "sbp": 90,
+    "total_c": 130,
+    "hdl_c": 100,
+    "egfr": 140,
+    "bmi": 18.5,
+    "diabetes": false,
+    "smoking": false,
+    "statin": false,
+    "bp_tx": false
+   },
+   "expected_percent": {
+    "total_cvd": {
+     "10": 0.1,
+     "30": 0.4
+    },
+    "ascvd": {
+     "10": 0.0,
+     "30": 0.2
+    },
+    "heart_failure": {
+     "10": 0.1,
+     "30": 0.8
+    }
+   }
+  },
+  {
+   "id": 4,
+   "inputs": {
+    "sex": "male",
+    "age": 30,
+    "sbp": 180,
+    "total_c": 320,
+    "hdl_c": 20,
+    "egfr": 15,
+    "bmi": 39.9,
+    "diabetes": true,
+    "smoking": true,
+    "statin": true,
+    "bp_tx": true
+   },
+   "expected_percent": {
+    "total_cvd": {
+     "10": 96.3,
+     "30": 97.3
+    },
+    "ascvd": {
+     "10": 88.5,
+     "30": 89.8
+    },
+    "heart_failure": {
+     "10": 91.4,
+     "30": 92.8
+    }
+   }
+  },
+  {
+   "id": 5,
+   "inputs": {
+    "sex": "female",
+    "age": 59,
+    "sbp": 150,
+    "total_c": 240,
+    "hdl_c": 40,
+    "egfr": 55,
+    "bmi": 32,
+    "diabetes": true,
+    "smoking": false,
+    "statin": false,
+    "bp_tx": true
+   },
+   "expected_percent": {
+    "total_cvd": {
+     "10": 22.0,
+     "30": 56.7
+    },
+    "ascvd": {
+     "10": 14.3,
+     "30": 39.6
+    },
+    "heart_failure": {
+     "10": 11.6,
+     "30": 39.9
+    }
+   }
+  },
+  {
+   "id": 6,
+   "inputs": {
+    "sex": "male",
+    "age": 59,
+    "sbp": 105,
+    "total_c": 180,
+    "hdl_c": 60,
+    "egfr": 75,
+    "bmi": 29,
+    "diabetes": false,
+    "smoking": true,
+    "statin": false,
+    "bp_tx": false
+   },
+   "expected_percent": {
+    "total_cvd": {
+     "10": 7.0,
+     "30": 25.6
+    },
+    "ascvd": {
+     "10": 3.9,
+     "30": 14.2
+    },
+    "heart_failure": {
+     "10": 3.6,
+     "30": 17.3
+    }
+   }
+  },
+  {
+   "id": 7,
+   "inputs": {
+    "sex": "female",
+    "age": 60,
+    "sbp": 135,
+    "total_c": 210,
+    "hdl_c": 55,
+    "egfr": 80,
+    "bmi": 27,
+    "diabetes": false,
+    "smoking": false,
+    "statin": true,
+    "bp_tx": false
+   },
+   "expected_percent": {
+    "total_cvd": {
+     "10": 4.9,
+     "30": null
+    },
+    "ascvd": {
+     "10": 3.3,
+     "30": null
+    },
+    "heart_failure": {
+     "10": 2.3,
+     "30": null
+    }
+   }
+  },
+  {
+   "id": 8,
+   "inputs": {
+    "sex": "male",
+    "age": 60,
+    "sbp": 160,
+    "total_c": 250,
+    "hdl_c": 35,
+    "egfr": 45,
+    "bmi": 35,
+    "diabetes": true,
+    "smoking": false,
+    "statin": false,
+    "bp_tx": true
+   },
+   "expected_percent": {
+    "total_cvd": {
+     "10": 34.5,
+     "30": null
+    },
+    "ascvd": {
+     "10": 23.8,
+     "30": null
+    },
+    "heart_failure": {
+     "10": 25.5,
+     "30": null
+    }
+   }
+  },
+  {
+   "id": 9,
+   "inputs": {
+    "sex": "female",
+    "age": 79,
+    "sbp": 170,
+    "total_c": 280,
+    "hdl_c": 45,
+    "egfr": 30,
+    "bmi": 22,
+    "diabetes": false,
+    "smoking": true,
+    "statin": true,
+    "bp_tx": true
+   },
+   "expected_percent": {
+    "total_cvd": {
+     "10": 42.0,
+     "30": null
+    },
+    "ascvd": {
+     "10": 26.2,
+     "30": null
+    },
+    "heart_failure": {
+     "10": 32.6,
+     "30": null
+    }
+   }
+  },
+  {
+   "id": 10,
+   "inputs": {
+    "sex": "male",
+    "age": 79,
+    "sbp": 110,
+    "total_c": 150,
+    "hdl_c": 70,
+    "egfr": 100,
+    "bmi": 30,
+    "diabetes": false,
+    "smoking": false,
+    "statin": false,
+    "bp_tx": false
+   },
+   "expected_percent": {
+    "total_cvd": {
+     "10": 21.5,
+     "30": null
+    },
+    "ascvd": {
+     "10": 10.5,
+     "30": null
+    },
+    "heart_failure": {
+     "10": 12.9,
+     "30": null
+    }
+   }
+  },
+  {
+   "id": 11,
+   "inputs": {
+    "sex": "female",
+    "age": 45,
+    "sbp": 125,
+    "total_c": 190,
+    "hdl_c": 62,
+    "egfr": 95,
+    "bmi": 24,
+    "diabetes": false,
+    "smoking": true,
+    "statin": false,
+    "bp_tx": false
+   },
+   "expected_percent": {
+    "total_cvd": {
+     "10": 2.1,
+     "30": 13.8
+    },
+    "ascvd": {
+     "10": 1.3,
+     "30": 7.9
+    },
+    "heart_failure": {
+     "10": 1.0,
+     "30": 7.4
+    }
+   }
+  },
+  {
+   "id": 12,
+   "inputs": {
+    "sex": "male",
+    "age": 45,
+    "sbp": 138,
+    "total_c": 230,
+    "hdl_c": 42,
+    "egfr": 88,
+    "bmi": 31,
+    "diabetes": false,
+    "smoking": false,
+    "statin": true,
+    "bp_tx": true
+   },
+   "expected_percent": {
+    "total_cvd": {
+     "10": 4.6,
+     "30": 28.9
+    },
+    "ascvd": {
+     "10": 3.2,
+     "30": 19.6
+    },
+    "heart_failure": {
+     "10": 1.3,
+     "30": 11.2
+    }
+   }
+  },
+  {
+   "id": 13,
+   "inputs": {
+    "sex": "female",
+    "age": 38,
+    "sbp": 112,
+    "total_c": 175,
+    "hdl_c": 58,
+    "egfr": 110,
+    "bmi": 21,
+    "diabetes": false,
+    "smoking": false,
+    "statin": false,
+    "bp_tx": false
+   },
+   "expected_percent": {
+    "total_cvd": {
+     "10": 0.4,
+     "30": 3.7
+    },
+    "ascvd": {
+     "10": 0.3,
+     "30": 2.2
+    },
+    "heart_failure": {
+     "10": 0.2,
+     "30": 1.6
+    }
+   }
+  },
+  {
+   "id": 14,
+   "inputs": {
+    "sex": "male",
+    "age": 70,
+    "sbp": 145,
+    "total_c": 205,
+    "hdl_c": 48,
+    "egfr": 62,
+    "bmi": 28,
+    "diabetes": true,
+    "smoking": false,
+    "statin": true,
+    "bp_tx": false
+   },
+   "expected_percent": {
+    "total_cvd": {
+     "10": 21.1,
+     "30": null
+    },
+    "ascvd": {
+     "10": 14.4,
+     "30": null
+    },
+    "heart_failure": {
+     "10": 12.1,
+     "30": null
+    }
+   }
+  }
+ ]
+}

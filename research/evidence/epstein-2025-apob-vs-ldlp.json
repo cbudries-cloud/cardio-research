@@ -1,0 +1,362 @@
+{
+ "schema_version": 1,
+ "id": "epstein-2025-apob-vs-ldlp",
+ "short_title": "ApoB vs LDL particle number when discordant (UK Biobank)",
+ "citation": {
+  "authors": [
+   "Epstein E",
+   "Ekpo E",
+   "Evans D",
+   "Varughese E",
+   "Hermel M",
+   "Jeschke S",
+   "Hassan S",
+   "Torkamani A",
+   "Muse ED",
+   "Triffon D"
+  ],
+  "title": "Apolipoprotein B outperforms low density lipoprotein particle number as a marker of cardiovascular risk in the UK Biobank",
+  "journal": "European Journal of Preventive Cardiology",
+  "year": 2025,
+  "doi": "10.1093/eurjpc/zwaf554",
+  "pmid": "40887080",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/40887080/"
+ },
+ "access": {
+  "full_text_reviewed": true,
+  "full_text_source": "Publisher HTML full text, academic.oup.com (doi:10.1093/eurjpc/zwaf554), opened in a browser; scripted access is blocked by the publisher",
+  "license": null,
+  "supplement_reviewed": false,
+  "retrieved_on": "2026-10-26",
+  "abstract_only_note": null
+ },
+ "study": {
+  "design": "prospective_cohort",
+  "design_detail": "UK Biobank participants with lipoprotein and apolipoprotein measurements. Concordance defined by a linear regression of ApoB on LDL-P with the intercept forced to zero; discordant subgroups were 2-30% above or below that line, compared with the concordant group.",
+  "evidence_type": "observational_association",
+  "population": "UK Biobank adults with at least 10 years of follow-up data, three or more ICD codes and baseline characteristics",
+  "setting": "United Kingdom",
+  "sample_size": 41099,
+  "exposure_or_intervention": "Discordance between ApoB and LDL particle number relative to the cohort regression line",
+  "comparator": "Concordant subgroup",
+  "outcomes": [
+   "Major adverse cardiovascular events",
+   "Coronary artery disease events"
+  ],
+  "follow_up": "10 years"
+ },
+ "claims": [
+  {
+   "id": "n-participants",
+   "statement": "Analytic sample size.",
+   "kind": "descriptive",
+   "measure": "count",
+   "scale": "descriptive",
+   "value": 41099,
+   "decimals": 0,
+   "unit": "participants",
+   "comparison": "none",
+   "population": "Analytic sample",
+   "time_horizon": null,
+   "provenance": "reported",
+   "source_location": {
+    "section": "Abstract",
+    "element": "Methods",
+    "quote": "Analyses were restricted to 41,099 participants (mean age 57 years, 49.7% female, 95.1% white)"
+   }
+  },
+  {
+   "id": "mean-age",
+   "statement": "Mean age of the analytic sample.",
+   "kind": "descriptive",
+   "measure": "mean",
+   "scale": "descriptive",
+   "value": 57,
+   "decimals": 0,
+   "unit": "years",
+   "comparison": "none",
+   "population": "Analytic sample",
+   "time_horizon": null,
+   "provenance": "reported",
+   "source_location": {
+    "section": "Abstract",
+    "element": "Methods",
+    "quote": "Analyses were restricted to 41,099 participants (mean age 57 years, 49.7% female, 95.1% white)"
+   }
+  },
+  {
+   "id": "pct-white",
+   "statement": "Share of participants recorded as white.",
+   "kind": "descriptive",
+   "measure": "proportion",
+   "scale": "descriptive",
+   "value": 95.1,
+   "decimals": 1,
+   "unit": "%",
+   "comparison": "none",
+   "population": "Analytic sample",
+   "time_horizon": null,
+   "provenance": "reported",
+   "source_location": {
+    "section": "Abstract",
+    "element": "Methods",
+    "quote": "Analyses were restricted to 41,099 participants (mean age 57 years, 49.7% female, 95.1% white)"
+   }
+  },
+  {
+   "id": "n-mace",
+   "statement": "MACE events over 10 years.",
+   "kind": "descriptive",
+   "measure": "count",
+   "scale": "descriptive",
+   "value": 9663,
+   "decimals": 0,
+   "unit": "events",
+   "comparison": "none",
+   "population": "Analytic sample",
+   "time_horizon": null,
+   "provenance": "reported",
+   "source_location": {
+    "section": "Abstract",
+    "element": "Results",
+    "quote": "Over 10 years of follow-up, 9,663 MACE and 1,754 CAD events occurred."
+   }
+  },
+  {
+   "id": "n-cad",
+   "statement": "CAD events over 10 years.",
+   "kind": "descriptive",
+   "measure": "count",
+   "scale": "descriptive",
+   "value": 1754,
+   "decimals": 0,
+   "unit": "events",
+   "comparison": "none",
+   "population": "Analytic sample",
+   "time_horizon": null,
+   "provenance": "reported",
+   "source_location": {
+    "section": "Abstract",
+    "element": "Results",
+    "quote": "Over 10 years of follow-up, 9,663 MACE and 1,754 CAD events occurred."
+   }
+  },
+  {
+   "id": "hr-apob-excess-2pct-mace",
+   "statement": "Hazard ratio for MACE, ApoB 2% above the level predicted from LDL-P (unadjusted case-rate ratio; reference group described inconsistently in the paper).",
+   "kind": "association",
+   "measure": "hazard_ratio",
+   "scale": "relative",
+   "value": 1.1,
+   "decimals": 1,
+   "unit": "ratio",
+   "comparison": "ApoB-discordant subgroup vs reference group (the paper describes the reference both as the concordant control group and as the whole population; see discrepancies)",
+   "population": "Analytic sample",
+   "time_horizon": null,
+   "provenance": "reported",
+   "source_location": {
+    "section": "Abstract",
+    "element": "Results",
+    "quote": "At only 2% ApoB discordance, HRs were already elevated for both MACE (HR 1.1, P<0.0001) and CAD (HR 1.1, P<0.0001)."
+   }
+  },
+  {
+   "id": "hr-apob-excess-30pct-mace",
+   "statement": "Hazard ratio for MACE at 30% ApoB discordance (unadjusted case-rate ratio; reference group described inconsistently in the paper).",
+   "kind": "association",
+   "measure": "hazard_ratio",
+   "scale": "relative",
+   "value": 1.4,
+   "decimals": 1,
+   "unit": "ratio",
+   "comparison": "ApoB-discordant subgroup vs reference group (the paper describes the reference both as the concordant control group and as the whole population; see discrepancies)",
+   "population": "Analytic sample",
+   "time_horizon": null,
+   "provenance": "reported",
+   "source_location": {
+    "section": "Abstract",
+    "element": "Results",
+    "quote": "Risk increased progressively, reaching HR 1.4 for MACE and HR 2.5 for CAD at 30% discordance."
+   }
+  },
+  {
+   "id": "hr-apob-excess-30pct-cad",
+   "statement": "Hazard ratio for CAD at 30% ApoB discordance (unadjusted case-rate ratio; reference group described inconsistently in the paper).",
+   "kind": "association",
+   "measure": "hazard_ratio",
+   "scale": "relative",
+   "value": 2.5,
+   "decimals": 1,
+   "unit": "ratio",
+   "comparison": "ApoB-discordant subgroup vs reference group (the paper describes the reference both as the concordant control group and as the whole population; see discrepancies)",
+   "population": "Analytic sample",
+   "time_horizon": null,
+   "provenance": "reported",
+   "source_location": {
+    "section": "Abstract",
+    "element": "Results",
+    "quote": "Risk increased progressively, reaching HR 1.4 for MACE and HR 2.5 for CAD at 30% discordance."
+   }
+  },
+  {
+   "id": "n-nmr-profiled-samples",
+   "statement": "Blood samples selected for Nightingale Health NMR metabolic profiling (the LDL-P platform).",
+   "kind": "descriptive",
+   "measure": "count",
+   "scale": "descriptive",
+   "value": 121540,
+   "decimals": 0,
+   "unit": "samples",
+   "comparison": "none",
+   "population": "UK Biobank random subset",
+   "time_horizon": null,
+   "provenance": "reported",
+   "source_location": {
+    "section": "Methods",
+    "element": "first paragraph",
+    "quote": "a random subset of 121 540 blood samples was selected for metabolic profiling using Nightingale Health’s nuclear magnetic resonance (NMR) spectroscopy platform (Helsinki, Finland)"
+   }
+  },
+  {
+   "id": "concordance-line-coefficient",
+   "statement": "Coefficient of the zero-intercept line of concordance, LDL-P = 0.001168 x ApoB, in the study's own units. The caption does not state units; Table 1 reports ApoB in g/L and LDL-P under a label that appears to be mmol/L mislabelled as nmol/L, and the coefficient reproduces the Table 1 means (0.001168 x 1.049 = 0.0012).",
+   "kind": "descriptive",
+   "measure": "regression_slope",
+   "scale": "descriptive",
+   "value": 0.001168,
+   "decimals": 6,
+   "unit": "LDL-P units per ApoB unit as used in the study (units not stated in the caption)",
+   "comparison": "none",
+   "population": "Analytic sample",
+   "time_horizon": null,
+   "provenance": "reported",
+   "source_location": {
+    "section": "Figure 1",
+    "element": "caption, panel A",
+    "quote": "line of concordance low density lipoprotein particle number  =  0.001168  ×  apolipoprotein B (intercept  =  zero)"
+   }
+  },
+  {
+   "id": "apob-particle-conversion-factor",
+   "statement": "Conversion the authors use from ApoB mass concentration to ApoB particle number: 0.0512 mg/dL per nmol/L (about 19.5 nmol/L per mg/dL, equivalent to roughly 512 kDa per apoB-100).",
+   "kind": "descriptive",
+   "measure": "conversion_factor",
+   "scale": "descriptive",
+   "value": 0.0512,
+   "decimals": 4,
+   "unit": "mg/dL per nmol/L",
+   "comparison": "none",
+   "population": "not population-specific (unit conversion)",
+   "time_horizon": null,
+   "provenance": "reported",
+   "source_location": {
+    "section": "Discussion",
+    "element": "paragraph on ApoB as total atherogenic particle number",
+    "quote": "when ApoB is converted to ApoB particle number in nmol/L (using a conversion factor of 0.0512 mg/dL = 1 nmol), it necessarily outnumbers LDL-P."
+   }
+  },
+  {
+   "id": "ldlp-platform-correlation-range",
+   "statement": "Correlation between LDL-P platforms (NMR, ion mobility, VAP) in the authors' earlier comparison in treated patients.",
+   "kind": "descriptive",
+   "measure": "range",
+   "scale": "descriptive",
+   "value": null,
+   "lower": 0.76,
+   "upper": 0.89,
+   "decimals": 2,
+   "unit": "correlation coefficient r",
+   "interval": "range across platform pairs as reported",
+   "comparison": "LDL-P platform vs platform",
+   "population": "treated patients (earlier study by the same group, cited abstract)",
+   "time_horizon": null,
+   "provenance": "reported",
+   "source_location": {
+    "section": "Discussion",
+    "element": "limitations paragraph",
+    "quote": "In a study from our group directly comparing three platforms (NMR, ion mobility, and VAP) in treated patients, we found only moderate correlations (r = 0.76–0.89)"
+   }
+  }
+ ],
+ "findings_summary": "Among 41,099 UK Biobank participants, subgroups whose ApoB lay above the level predicted from LDL particle number had higher hazard ratios for MACE and CAD than the concordant group, increasing with the degree of discordance (HR 1.1 at 2%, up to 1.4 for MACE and 2.5 for CAD at 30%). Subgroups with LDL particle number discordant relative to ApoB showed no significant increase in hazard ratio (abstract wording: 'There was no significant increase in HR for CAD events or MACE for the subpopulations with discordant LDL-P vs ApoB').",
+ "limitations": [
+  {
+   "text": "LDL-P was measured with Nightingale Health's NMR platform (Methods: \"a random subset of 121 540 blood samples was selected for metabolic profiling using Nightingale Health’s nuclear magnetic resonance (NMR) spectroscopy platform (Helsinki, Finland)\"). The authors: \"One key limitation of our study is generalizability outside of the specific LDL-P assay used. The UK Biobank measured LDL-P with Nightingale Health’s NMR platform, which is one of several available technologies.\" Results may not transfer to ion-mobility LDL-P.",
+   "source": "stated_by_authors"
+  },
+  {
+   "text": "The authors state there is no standardization across LDL-P assays (Nightingale NMR, US NMR, ion mobility, VAP) and that these methods may yield discordant results.",
+   "source": "stated_by_authors"
+  },
+  {
+   "text": "Unable to adjust for medication use, especially statins; residual confounding cannot be excluded (authors).",
+   "source": "stated_by_authors"
+  },
+  {
+   "text": "The ApoB assay is not described in the paper; it is not verified here which UK Biobank ApoB measurement was used.",
+   "source": "identified_in_review"
+  },
+  {
+   "text": "'Hazard ratios' are unadjusted case-rate ratios with Fisher's exact tests; no time-to-event model, covariate adjustment or confidence intervals are reported in the text. The comparator is described inconsistently: the Methods compare each subpopulation's case rate with the population case rate, while the statistical analysis paragraph refers to the concordant control group (see discrepancies).",
+   "source": "identified_in_review"
+  },
+  {
+   "text": "The concordance coefficient is reported in the Figure 1 caption (LDL-P = 0.001168 x ApoB, intercept zero) without units. Its applicability to measurements from other assays, platforms or unit systems, including an ion-mobility LDL-P and an ApoB of unidentified method, has not been established.",
+   "source": "identified_in_review"
+  },
+  {
+   "text": "Discordance is defined relative to a cohort regression line with the intercept forced to zero, not relative to laboratory reference ranges.",
+   "source": "identified_in_review"
+  },
+  {
+   "text": "Selection on 10 years of data and three or more ICD codes, and a 95.1% white sample, limit generalisability.",
+   "source": "identified_in_review"
+  },
+  {
+   "text": "Observational; relative hazard ratios only; no absolute risks in the abstract.",
+   "source": "identified_in_review"
+  },
+  {
+   "text": "A published comment exists (Guillerme et al., Eur J Prev Cardiol 2026, doi:10.1093/eurjpc/zwag025); it has no abstract and was not reviewed.",
+   "source": "identified_in_review"
+  },
+  {
+   "text": "'No significant increase' for LDL-P-discordant subgroups is absence of evidence of an association, not evidence that the discordance carries no risk; no confidence intervals are reported in the text.",
+   "source": "identified_in_review"
+  }
+ ],
+ "applicability_constraints": [
+  "UK Biobank participants (mean age 57, 95.1% white) with long follow-up records.",
+  "LDL-P was measured by Nightingale Health NMR, not ion mobility; the authors state the assays are not standardized and may disagree, so the findings do not transfer directly to an ion-mobility LDL-P.",
+  "Discordance percentages are relative to this cohort's zero-intercept line (coefficient 0.001168 in the study's own, unstated units, Nightingale NMR LDL-P); applying it to other assays or unit systems has not been established.",
+  "Group rate ratios are not an individual's risk."
+ ],
+ "discrepancies": [
+  {
+   "description": "Table 1 prints LDL-P as \"0.0012 ± 3e-04\" with the unit nmol/L, which is implausible for LDL particle concentration; the magnitude fits mmol/L (about 1200 nmol/L). The table's unit label is likely wrong.",
+   "locations": [
+    "Table 1, row 'LDL-P (nmol/L)'"
+   ],
+   "handling": "No claim uses the Table 1 LDL-P value; recorded only."
+  },
+  {
+   "description": "The comparator for the reported 'hazard ratios' is described two ways: \"The hazard ratio (HR) of cases to controls was determined for the discordant subpopulations and the concordant control group\" and \"hazard ratios (HRs) were computed by comparing the subpopulation case rate with the population case rate\". Which reference group produced the reported values is not resolved by the text.",
+   "locations": [
+    "Methods, statistical analysis paragraph",
+    "Methods, subpopulation paragraph"
+   ],
+   "handling": "Claims state the reference group as inconsistently described; values are not presented as adjusted hazard ratios against a defined concordant group."
+  }
+ ],
+ "interpretation": "In this cohort, ApoB carried the risk signal when the two measures disagreed in the direction of more ApoB than LDL-P predicted; the reverse direction was not significantly associated with events. LDL-P was measured by Nightingale Health NMR, which the authors state is not standardized against other LDL-P assays such as ion mobility, so transfer to an ion-mobility result is uncertain.",
+ "review": {
+  "status": "source_verified",
+  "verified_by": "Automated agent (Claude), interactive session; not an independent or clinical review",
+  "verified_on": "2026-10-26",
+  "method": "Abstract values re-checked; Methods, Statistical analysis, Table 1 and Discussion read in the publisher full text; every quote checked verbatim by evidence_tools.validate against the cached abstract plus full text. Corrected 2026-10-26 after external review: the concordance coefficient is reported in the Figure 1 caption (earlier record said it was not reported); comparator inconsistency recorded.",
+  "independent_review": false
+ },
+ "publication": {
+  "status": "local_notebook_only"
+ }
+}

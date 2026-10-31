@@ -1,0 +1,6 @@
+row_id,claim_id,group,label,series,value,lower,upper,decimals,unit,provenance,source_section,source_element
+r1,apob-range-ldl70,LDL-C 70 mg/dL,LDL-C 70,apoB ~95% range,,40.8,67.0,1,mg/dL,reported,Results,paragraph 'Correlations and variability'
+r2,apob-range-ldl100,LDL-C 100 mg/dL,LDL-C 100,apoB ~95% range,,68.4,87.0,1,mg/dL,reported,Results,paragraph 'Correlations and variability'
+r3,apob-range-ldl130,LDL-C 130 mg/dL,LDL-C 130,apoB ~95% range,,85.8,108.8,1,mg/dL,reported,Results,paragraph 'Correlations and variability'
+r4,apob-range-ldl160,LDL-C 160 mg/dL,LDL-C 160,apoB ~95% range,,106.3,131.7,1,mg/dL,reported,Results,paragraph 'Correlations and variability'
+r5,apob-range-ldl190,LDL-C 190 mg/dL,LDL-C 190,apoB ~95% range,,124.6,156.4,1,mg/dL,reported,Results,paragraph 'Correlations and variability'

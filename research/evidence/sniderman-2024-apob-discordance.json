@@ -1,0 +1,597 @@
+{
+  "schema_version": 1,
+  "id": "sniderman-2024-apob-discordance",
+  "short_title": "ApoB vs LDL-C and non-HDL-C discordance (UK Biobank)",
+  "citation": {
+    "authors": [
+      "Sniderman AD",
+      "Dufresne L",
+      "Pencina KM",
+      "Bilgic S",
+      "Thanassoulis G",
+      "Pencina MJ"
+    ],
+    "title": "Discordance among apoB, non-high-density lipoprotein cholesterol, and triglycerides: implications for cardiovascular prevention",
+    "journal": "European Heart Journal",
+    "year": 2024,
+    "volume": "45",
+    "issue": "27",
+    "pages": "2410-2418",
+    "doi": "10.1093/eurheartj/ehae258",
+    "pmid": "38700053",
+    "pmcid": "PMC11242442",
+    "url": "https://doi.org/10.1093/eurheartj/ehae258"
+  },
+  "access": {
+    "full_text_reviewed": true,
+    "full_text_source": "PubMed Central full-text XML (NCBI efetch, PMC11242442); Figure 2 image inspected",
+    "license": "CC BY-NC 4.0",
+    "supplement_reviewed": false,
+    "retrieved_on": "2026-10-21",
+    "abstract_only_note": null
+  },
+  "study": {
+    "design": "prospective_cohort",
+    "design_detail": "UK Biobank prospective cohort. Distribution of apoB at pre-specified LDL-C, non-HDL-C and triglyceride levels; 10-year Kaplan-Meier ASCVD rates for high vs low apoB within narrow bands of those levels; Cox models with regression residuals (discordance analysis), HRs per 1 SD.",
+    "evidence_type": "observational_association",
+    "population": "UK Biobank adults aged 40-73 years, 42% men, free of cardiovascular disease and not on lipid-lowering therapy at baseline; triglycerides < 400 mg/dL, LDL-C < 250 mg/dL",
+    "setting": "United Kingdom, recruited 2006-2010 from primary care lists",
+    "sample_size": 293876,
+    "exposure_or_intervention": "Baseline apoB, LDL-C, non-HDL-C, triglycerides (single baseline measurement each)",
+    "comparator": "apoB at least 1 SD above vs at least 1 SD below the mean at fixed (+/-10 mg/dL) LDL-C, non-HDL-C or triglyceride levels; residual (discordant) apoB vs residual LDL-C/non-HDL-C/triglycerides in Cox models",
+    "outcomes": [
+      "New-onset atherosclerotic cardiovascular disease (ASCVD), defined in the paper's Supplementary Table S1"
+    ],
+    "follow_up": "Median about 11 years (Table 1: 10.95 years, IQR 10.11-11.66)"
+  },
+  "claims": [
+    {
+      "id": "n-participants",
+      "statement": "Analytic sample size.",
+      "kind": "descriptive",
+      "measure": "count",
+      "scale": "descriptive",
+      "value": 293876,
+      "decimals": 0,
+      "unit": "participants",
+      "comparison": "none",
+      "population": "UK Biobank analytic sample",
+      "time_horizon": null,
+      "provenance": "reported",
+      "source_location": {
+        "section": "Abstract",
+        "element": "Methods paragraph",
+        "quote": "A sample of 293 876 UK Biobank adults (age: 40–73 years, 42% men), free of cardiovascular disease, with a median follow-up for new-onset ASCVD of 11 years was included."
+      }
+    },
+    {
+      "id": "n-events",
+      "statement": "New-onset ASCVD events during follow-up.",
+      "kind": "descriptive",
+      "measure": "count",
+      "scale": "descriptive",
+      "value": 19982,
+      "decimals": 0,
+      "unit": "events",
+      "comparison": "none",
+      "population": "UK Biobank analytic sample",
+      "time_horizon": "median 11 years",
+      "provenance": "reported",
+      "source_location": {
+        "section": "Results",
+        "element": "paragraph 'Associations on follow-up'",
+        "quote": "Over a median of 11 years, there were 19 982 ASCVD events."
+      }
+    },
+    {
+      "id": "r-apob-ldl",
+      "statement": "Pearson correlation between apoB and LDL-C (and between apoB and non-HDL-C).",
+      "kind": "descriptive",
+      "measure": "correlation",
+      "scale": "descriptive",
+      "value": 0.96,
+      "decimals": 2,
+      "unit": "Pearson r",
+      "comparison": "apoB vs LDL-C; apoB vs non-HDL-C",
+      "population": "UK Biobank analytic sample",
+      "time_horizon": null,
+      "provenance": "reported",
+      "source_location": {
+        "section": "Results",
+        "element": "paragraph 'Correlations and variability'",
+        "quote": "ApoB was highly correlated with both LDL-C and non-HDL-C (see Supplementary data online, Table S2), Pearson’s r = .96 (P < .001) for both."
+      }
+    },
+    {
+      "id": "sd-apob",
+      "statement": "Standard deviation of apoB in the cohort.",
+      "kind": "descriptive",
+      "measure": "sd",
+      "scale": "descriptive",
+      "value": 22.7,
+      "decimals": 1,
+      "unit": "mg/dL",
+      "comparison": "none",
+      "population": "UK Biobank analytic sample",
+      "time_horizon": null,
+      "provenance": "reported",
+      "source_location": {
+        "section": "Results",
+        "element": "paragraph 'Baseline characteristics'",
+        "quote": "The standard deviation for apoB was 22.7 mg/dL."
+      }
+    },
+    {
+      "id": "apob-range-ldl70",
+      "statement": "ApoB range capturing about 95% of values when LDL-C is 70 mg/dL.",
+      "kind": "descriptive",
+      "measure": "range",
+      "scale": "descriptive",
+      "value": null,
+      "lower": 40.8,
+      "upper": 67.0,
+      "decimals": 1,
+      "unit": "mg/dL",
+      "interval": "approximately 95% of observations (mean ± 2 SD of apoB at that LDL-C value)",
+      "comparison": "apoB distribution at a fixed LDL-C",
+      "population": "UK Biobank analytic sample",
+      "time_horizon": null,
+      "provenance": "reported",
+      "source_location": {
+        "section": "Results",
+        "element": "paragraph 'Correlations and variability'",
+        "quote": "Indeed, when LDL-C is 70 mg/dL, to capture ∼95% of all apoB values, requires a range that extends from 40.8 to 67.0 mg/dL."
+      }
+    },
+    {
+      "id": "apob-range-ldl100",
+      "statement": "ApoB range capturing about 95% of values when LDL-C is 100 mg/dL.",
+      "kind": "descriptive",
+      "measure": "range",
+      "scale": "descriptive",
+      "value": null,
+      "lower": 68.4,
+      "upper": 87.0,
+      "decimals": 1,
+      "unit": "mg/dL",
+      "interval": "approximately 95% of observations (mean ± 2 SD of apoB at that LDL-C value)",
+      "comparison": "apoB distribution at a fixed LDL-C",
+      "population": "UK Biobank analytic sample",
+      "time_horizon": null,
+      "provenance": "reported",
+      "source_location": {
+        "section": "Results",
+        "element": "paragraph 'Correlations and variability'",
+        "quote": "The corresponding ranges were 68.4–87.0 mg/dL when LDL-C 100 mg/dL"
+      }
+    },
+    {
+      "id": "apob-range-ldl130",
+      "statement": "ApoB range capturing about 95% of values when LDL-C is 130 mg/dL.",
+      "kind": "descriptive",
+      "measure": "range",
+      "scale": "descriptive",
+      "value": null,
+      "lower": 85.8,
+      "upper": 108.8,
+      "decimals": 1,
+      "unit": "mg/dL",
+      "interval": "approximately 95% of observations (mean ± 2 SD of apoB at that LDL-C value)",
+      "comparison": "apoB distribution at a fixed LDL-C",
+      "population": "UK Biobank analytic sample",
+      "time_horizon": null,
+      "provenance": "reported",
+      "source_location": {
+        "section": "Results",
+        "element": "paragraph 'Correlations and variability'",
+        "quote": "85.8–108.8 md/dL when LDL-C 130 mg/dL"
+      }
+    },
+    {
+      "id": "apob-range-ldl160",
+      "statement": "ApoB range capturing about 95% of values when LDL-C is 160 mg/dL.",
+      "kind": "descriptive",
+      "measure": "range",
+      "scale": "descriptive",
+      "value": null,
+      "lower": 106.3,
+      "upper": 131.7,
+      "decimals": 1,
+      "unit": "mg/dL",
+      "interval": "approximately 95% of observations (mean ± 2 SD of apoB at that LDL-C value)",
+      "comparison": "apoB distribution at a fixed LDL-C",
+      "population": "UK Biobank analytic sample",
+      "time_horizon": null,
+      "provenance": "reported",
+      "source_location": {
+        "section": "Results",
+        "element": "paragraph 'Correlations and variability'",
+        "quote": "106.3–131.7 mg/dL when LDL-C 160 mg/dL"
+      }
+    },
+    {
+      "id": "apob-range-ldl190",
+      "statement": "ApoB range capturing about 95% of values when LDL-C is 190 mg/dL.",
+      "kind": "descriptive",
+      "measure": "range",
+      "scale": "descriptive",
+      "value": null,
+      "lower": 124.6,
+      "upper": 156.4,
+      "decimals": 1,
+      "unit": "mg/dL",
+      "interval": "approximately 95% of observations (mean ± 2 SD of apoB at that LDL-C value)",
+      "comparison": "apoB distribution at a fixed LDL-C",
+      "population": "UK Biobank analytic sample",
+      "time_horizon": null,
+      "provenance": "reported",
+      "source_location": {
+        "section": "Results",
+        "element": "paragraph 'Correlations and variability'",
+        "quote": "124.6–156.4 mg/dL when LDL-C 190 mg/dL"
+      }
+    },
+    {
+      "id": "apob-range-width-ldl70",
+      "statement": "Width of the ~95% apoB range at LDL-C 70 mg/dL (our arithmetic from the reported bounds).",
+      "kind": "descriptive",
+      "measure": "range_width",
+      "scale": "descriptive",
+      "value": 26.2,
+      "decimals": 1,
+      "unit": "mg/dL",
+      "comparison": "upper minus lower bound",
+      "population": "UK Biobank analytic sample",
+      "time_horizon": null,
+      "provenance": "derived",
+      "derivation": {
+        "method": "range_width",
+        "inputs": [
+          "apob-range-ldl70.lower",
+          "apob-range-ldl70.upper"
+        ],
+        "explanation": "67.0 − 40.8 mg/dL, computed from the reported bounds"
+      }
+    },
+    {
+      "id": "rate-ldl130-high-apob",
+      "statement": "10-year Kaplan-Meier ASCVD rate, apoB at least 1 SD above the mean, LDL-C 130 ± 10 mg/dL.",
+      "kind": "association",
+      "measure": "event_rate",
+      "scale": "absolute",
+      "value": 7.3,
+      "decimals": 1,
+      "unit": "10-year event rate (unit not stated; figure axis 'Event Rate')",
+      "comparison": "high vs low apoB at LDL-C 130 ± 10 mg/dL",
+      "population": "UK Biobank participants with LDL-C 120-140 mg/dL and high apoB",
+      "time_horizon": "10 years",
+      "provenance": "reported",
+      "source_location": {
+        "section": "Results",
+        "element": "paragraph 'Ten-year event rates at high vs. low apoB levels' (Figure 2A)",
+        "quote": "when LDL-C = 130 ± 10 mg/dL, 10-year ASCVD rates were 7.3 vs. 4.0 (P < .001) for high vs. low apoB (Figure 2A)"
+      }
+    },
+    {
+      "id": "rate-ldl130-low-apob",
+      "statement": "10-year Kaplan-Meier ASCVD rate, apoB at least 1 SD below the mean, LDL-C 130 ± 10 mg/dL.",
+      "kind": "association",
+      "measure": "event_rate",
+      "scale": "absolute",
+      "value": 4.0,
+      "decimals": 1,
+      "unit": "10-year event rate (unit not stated; figure axis 'Event Rate')",
+      "comparison": "high vs low apoB at LDL-C 130 ± 10 mg/dL",
+      "population": "UK Biobank participants with LDL-C 120-140 mg/dL and low apoB",
+      "time_horizon": "10 years",
+      "provenance": "reported",
+      "source_location": {
+        "section": "Results",
+        "element": "paragraph 'Ten-year event rates at high vs. low apoB levels' (Figure 2A)",
+        "quote": "when LDL-C = 130 ± 10 mg/dL, 10-year ASCVD rates were 7.3 vs. 4.0 (P < .001) for high vs. low apoB (Figure 2A)"
+      }
+    },
+    {
+      "id": "rate-nonhdl160-high-apob",
+      "statement": "10-year Kaplan-Meier ASCVD rate, high apoB, non-HDL-C 160 ± 10 mg/dL.",
+      "kind": "association",
+      "measure": "event_rate",
+      "scale": "absolute",
+      "value": 6.4,
+      "decimals": 1,
+      "unit": "10-year event rate (unit not stated; figure axis 'Event Rate')",
+      "comparison": "high vs low apoB at non-HDL-C 160 ± 10 mg/dL",
+      "population": "UK Biobank participants with non-HDL-C 150-170 mg/dL and high apoB",
+      "time_horizon": "10 years",
+      "provenance": "reported",
+      "source_location": {
+        "section": "Results",
+        "element": "paragraph 'Ten-year event rates at high vs. low apoB levels' (Figure 2B)",
+        "quote": "The corresponding rates were 6.4 vs. 4.6 (P < .001) when non-HDL-C = 160 ± 10 mg/dL (Figure 2B)"
+      }
+    },
+    {
+      "id": "rate-nonhdl160-low-apob",
+      "statement": "10-year Kaplan-Meier ASCVD rate, low apoB, non-HDL-C 160 ± 10 mg/dL.",
+      "kind": "association",
+      "measure": "event_rate",
+      "scale": "absolute",
+      "value": 4.6,
+      "decimals": 1,
+      "unit": "10-year event rate (unit not stated; figure axis 'Event Rate')",
+      "comparison": "high vs low apoB at non-HDL-C 160 ± 10 mg/dL",
+      "population": "UK Biobank participants with non-HDL-C 150-170 mg/dL and low apoB",
+      "time_horizon": "10 years",
+      "provenance": "reported",
+      "source_location": {
+        "section": "Results",
+        "element": "paragraph 'Ten-year event rates at high vs. low apoB levels' (Figure 2B)",
+        "quote": "The corresponding rates were 6.4 vs. 4.6 (P < .001) when non-HDL-C = 160 ± 10 mg/dL (Figure 2B)"
+      }
+    },
+    {
+      "id": "rate-tg115-high-apob",
+      "statement": "10-year Kaplan-Meier ASCVD rate, high apoB, triglycerides 115 ± 10 mg/dL.",
+      "kind": "association",
+      "measure": "event_rate",
+      "scale": "absolute",
+      "value": 7.0,
+      "decimals": 1,
+      "unit": "10-year event rate (unit not stated; figure axis 'Event Rate')",
+      "comparison": "high vs low apoB at triglycerides 115 ± 10 mg/dL",
+      "population": "UK Biobank participants with triglycerides 105-125 mg/dL and high apoB",
+      "time_horizon": "10 years",
+      "provenance": "reported",
+      "source_location": {
+        "section": "Results",
+        "element": "paragraph 'Ten-year event rates at high vs. low apoB levels' (Supplementary Figure S2, not reviewed)",
+        "quote": "7.0 vs. 4.6 (P < .001) when triglycerides = 115 ± 10 mg/dL"
+      }
+    },
+    {
+      "id": "rate-tg115-low-apob",
+      "statement": "10-year Kaplan-Meier ASCVD rate, low apoB, triglycerides 115 ± 10 mg/dL.",
+      "kind": "association",
+      "measure": "event_rate",
+      "scale": "absolute",
+      "value": 4.6,
+      "decimals": 1,
+      "unit": "10-year event rate (unit not stated; figure axis 'Event Rate')",
+      "comparison": "high vs low apoB at triglycerides 115 ± 10 mg/dL",
+      "population": "UK Biobank participants with triglycerides 105-125 mg/dL and low apoB",
+      "time_horizon": "10 years",
+      "provenance": "reported",
+      "source_location": {
+        "section": "Results",
+        "element": "paragraph 'Ten-year event rates at high vs. low apoB levels' (Supplementary Figure S2, not reviewed)",
+        "quote": "7.0 vs. 4.6 (P < .001) when triglycerides = 115 ± 10 mg/dL"
+      }
+    },
+    {
+      "id": "hr-residual-apob-given-ldl",
+      "statement": "Hazard ratio per 1 SD of the part of apoB not explained by LDL-C (residual apoB), in a model with LDL-C, HDL-C and standard risk factors.",
+      "kind": "association",
+      "measure": "hazard_ratio",
+      "scale": "relative",
+      "value": 1.06,
+      "lower": 1.04,
+      "upper": 1.07,
+      "decimals": 2,
+      "unit": "ratio per 1 SD",
+      "interval": "95% CI",
+      "comparison": "per 1 SD of residual apoB",
+      "population": "UK Biobank analytic sample",
+      "time_horizon": "median 11 years follow-up",
+      "provenance": "reported",
+      "source_location": {
+        "section": "Results",
+        "element": "paragraph 'Associations on follow-up' (Table 2)",
+        "quote": "both LDL-C and residual apoB were significantly associated with the outcome: HR 1.14 (95% CI: 1.12, 1.16) for LDL-C and HR 1.06 (95% CI: 1.04, 1.07) for residual apoB"
+      }
+    },
+    {
+      "id": "hr-residual-ldl-given-apob",
+      "statement": "Hazard ratio per 1 SD of the part of LDL-C not explained by apoB (residual LDL-C), in a model with apoB, HDL-C and standard risk factors.",
+      "kind": "association",
+      "measure": "hazard_ratio",
+      "scale": "relative",
+      "value": 0.99,
+      "lower": 0.97,
+      "upper": 1.0,
+      "decimals": 2,
+      "unit": "ratio per 1 SD",
+      "interval": "95% CI",
+      "comparison": "per 1 SD of residual LDL-C",
+      "population": "UK Biobank analytic sample",
+      "time_horizon": "median 11 years follow-up",
+      "provenance": "reported",
+      "source_location": {
+        "section": "Results",
+        "element": "paragraph 'Associations on follow-up' (Table 2)",
+        "quote": "and .99 (95% CI: .97, 1.00) for residual LDL-C (Table 2)"
+      }
+    },
+    {
+      "id": "hr-residual-apob-given-nonhdl",
+      "statement": "Hazard ratio per 1 SD of residual apoB after accounting for non-HDL-C and HDL-C.",
+      "kind": "association",
+      "measure": "hazard_ratio",
+      "scale": "relative",
+      "value": 1.04,
+      "lower": 1.03,
+      "upper": 1.06,
+      "decimals": 2,
+      "unit": "ratio per 1 SD",
+      "interval": "95% CI",
+      "comparison": "per 1 SD of residual apoB",
+      "population": "UK Biobank analytic sample",
+      "time_horizon": "median 11 years follow-up",
+      "provenance": "reported",
+      "source_location": {
+        "section": "Abstract",
+        "element": "Results paragraph (also Table 3)",
+        "quote": "after accounting for non-HDL-C and HDL-C (hazard ratio 1.04, 95% confidence interval 1.03–1.06)"
+      }
+    },
+    {
+      "id": "hr-residual-nonhdl-given-apob",
+      "statement": "Hazard ratio per 1 SD of residual non-HDL-C after accounting for apoB.",
+      "kind": "association",
+      "measure": "hazard_ratio",
+      "scale": "relative",
+      "value": 1.0,
+      "lower": 0.99,
+      "upper": 1.01,
+      "decimals": 2,
+      "unit": "ratio per 1 SD",
+      "interval": "95% CI",
+      "comparison": "per 1 SD of residual non-HDL-C",
+      "population": "UK Biobank analytic sample",
+      "time_horizon": "median 11 years follow-up",
+      "provenance": "reported",
+      "source_location": {
+        "section": "Table 3",
+        "element": "row 'Non-HDL-C residual' (cells joined with ' | ')",
+        "quote": "Non-HDL-C residual | 1.00 (.99, 1.01) | .939"
+      }
+    },
+    {
+      "id": "hr-residual-apob-given-tg",
+      "statement": "Hazard ratio per 1 SD of residual apoB after accounting for log triglycerides and HDL-C.",
+      "kind": "association",
+      "measure": "hazard_ratio",
+      "scale": "relative",
+      "value": 1.13,
+      "lower": 1.12,
+      "upper": 1.15,
+      "decimals": 2,
+      "unit": "ratio per 1 SD",
+      "interval": "95% CI",
+      "comparison": "per 1 SD of residual apoB",
+      "population": "UK Biobank analytic sample",
+      "time_horizon": "median 11 years follow-up",
+      "provenance": "reported",
+      "source_location": {
+        "section": "Results",
+        "element": "paragraph on triglycerides after Table 3 (Supplementary Table S8)",
+        "quote": "The HRs were 1.15 (95% CI: 1.14, 1.17) for apoB and 1.01 (.99, 1.03) for residual log triglycerides but 1.07 (1.05, 1.09) for log triglycerides and 1.13 (1.12, 1.15) for residual apoB"
+      }
+    },
+    {
+      "id": "hr-residual-tg-given-apob",
+      "statement": "Hazard ratio per 1 SD of residual log triglycerides after accounting for apoB and HDL-C.",
+      "kind": "association",
+      "measure": "hazard_ratio",
+      "scale": "relative",
+      "value": 1.01,
+      "lower": 0.99,
+      "upper": 1.03,
+      "decimals": 2,
+      "unit": "ratio per 1 SD",
+      "interval": "95% CI",
+      "comparison": "per 1 SD of residual log triglycerides",
+      "population": "UK Biobank analytic sample",
+      "time_horizon": "median 11 years follow-up",
+      "provenance": "reported",
+      "source_location": {
+        "section": "Results",
+        "element": "paragraph on triglycerides after Table 3 (Supplementary Table S8)",
+        "quote": "The HRs were 1.15 (95% CI: 1.14, 1.17) for apoB and 1.01 (.99, 1.03) for residual log triglycerides but 1.07 (1.05, 1.09) for log triglycerides and 1.13 (1.12, 1.15) for residual apoB"
+      }
+    }
+  ],
+  "findings_summary": "In 293 876 UK Biobank adults without cardiovascular disease, apoB correlated very highly with LDL-C and non-HDL-C (r = .96), yet at any fixed LDL-C the apoB values spanned a wide range (for example about 85.8 to 108.8 mg/dL at LDL-C 130 mg/dL, capturing ~95% of people). Within narrow LDL-C, non-HDL-C and triglyceride bands, people with high apoB had higher 10-year ASCVD rates than people with low apoB (for example 7.3 vs 4.0 at LDL-C 130 ± 10 mg/dL). In residual (discordance) models, the part of apoB not explained by LDL-C or non-HDL-C remained associated with ASCVD (HR 1.06 and 1.04 per SD), whereas the part of LDL-C or non-HDL-C not explained by apoB did not (HR 0.99 and 1.00).",
+  "limitations": [
+    {
+      "text": "Single-country cohort (UK); racial and ethnic subgroups represent that country only.",
+      "source": "stated_by_authors"
+    },
+    {
+      "text": "Observational associations from single baseline measurements. They do not show that lowering apoB specifically, rather than LDL-C, changes outcomes.",
+      "source": "identified_in_review"
+    },
+    {
+      "text": "People on lipid-lowering therapy at baseline were excluded, so the findings describe untreated lipid levels.",
+      "source": "identified_in_review"
+    },
+    {
+      "text": "The authors report that the high vs low apoB differences in 10-year rates were statistically significant except at the lowest LDL-C and non-HDL-C levels, which limits what the band comparison says for people with low LDL-C.",
+      "source": "stated_by_authors"
+    },
+    {
+      "text": "The main text does not state whether 'apoB at least 1 SD above/below the mean' uses the cohort apoB distribution or the distribution within each lipid band, and does not report the group sizes.",
+      "source": "identified_in_review"
+    },
+    {
+      "text": "The 10-year rates are reported without a stated unit; the high and low apoB groups are the tails (beyond ±1 SD), so most people fall between them.",
+      "source": "identified_in_review"
+    },
+    {
+      "text": "The per-SD hazard ratios for residual apoB are modest (1.04–1.06); a statistically clear residual association is not the same as a large difference in absolute risk for a given person.",
+      "source": "identified_in_review"
+    },
+    {
+      "text": "Supplementary material (outcome definitions, sensitivity bands, Figure S2, reclassification Table S6) was not reviewed for this record.",
+      "source": "identified_in_review"
+    }
+  ],
+  "applicability_constraints": [
+    "Adults aged 40–73 at baseline, without cardiovascular disease and not on lipid-lowering therapy.",
+    "Triglycerides < 400 mg/dL, LDL-C < 250 mg/dL, apoB 20–400 mg/dL (exclusions).",
+    "Cohort event rates describe groups in UK Biobank over 10 years; they are not an individual's risk."
+  ],
+  "discrepancies": [
+    {
+      "description": "Sample size is 293 876 in the Abstract and Table 1 but 293 883 in the Methods text.",
+      "locations": [
+        "Abstract, Methods",
+        "Table 1",
+        "Methods, final analytic sample sentence"
+      ],
+      "handling": "Record uses 293 876 (Abstract and Table 1)."
+    },
+    {
+      "description": "The Abstract gives the residual-apoB HR after accounting for LDL-C as 1.06 (95% CI 1.0–1.07); Table 2 and the Results text give 1.06 (1.04, 1.07).",
+      "locations": [
+        "Abstract, Results",
+        "Table 2",
+        "Results, 'Associations on follow-up'"
+      ],
+      "handling": "Record uses the Results/Table 2 interval."
+    },
+    {
+      "description": "The Discussion states the apoB range at LDL-C 70 mg/dL spans 'an absolute difference of 27.2 mg/dL'; the reported bounds (40.8 to 67.0 mg/dL) differ by 26.2 mg/dL.",
+      "locations": [
+        "Discussion, paragraph on 95% ranges",
+        "Results, 'Correlations and variability'"
+      ],
+      "handling": "Record reports the bounds and our own arithmetic (26.2), labelled as derived."
+    },
+    {
+      "description": "Units are printed as 'md/dL' for two ranges in the Results text.",
+      "locations": [
+        "Results, 'Correlations and variability'"
+      ],
+      "handling": "Treated as a typographical error for mg/dL; quotes kept verbatim."
+    },
+    {
+      "description": "The Results give the apoB SD (22.7 mg/dL) for this UK Biobank cohort; the Discussion describes 22.7 mg/dL as '1 SD of apoB for the American population'.",
+      "locations": [
+        "Results, 'Baseline characteristics'",
+        "Discussion, paragraph on 95% ranges"
+      ],
+      "handling": "Record treats 22.7 mg/dL as the UK Biobank cohort SD, per the Results."
+    }
+  ],
+  "interpretation": "The paper supports a specific, limited point: two markers that correlate at r = .96 across a population can still disagree substantially for an individual, and in this cohort the disagreement carried prognostic information in the direction of apoB. It does not establish how often the disagreement would change a decision for a given person, and it does not test apoB-guided care. For this project, it is a reason to record apoB alongside LDL-C and non-HDL-C when it is available, and to treat an apparent stability of LDL-C as incomplete information about apoB-containing particles.",
+  "review": {
+    "status": "source_verified",
+    "verified_by": "Automated agent (Claude) during an unattended session; not an independent or clinical review",
+    "verified_on": "2026-10-21",
+    "method": "Each reported value was matched against a verbatim quote from the PMC full text, and each quote was checked against the cached full text by evidence_tools.validate. Figure 2 was inspected only to confirm the axis label; no values were read from bars.",
+    "independent_review": false
+  },
+  "publication": {
+    "status": "local_notebook_only"
+  }
+}

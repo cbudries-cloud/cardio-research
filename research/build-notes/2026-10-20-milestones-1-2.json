@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "id": "2026-10-20-milestones-1-2",
+  "date": "2026-10-20",
+  "title": "Milestones 1–2: a verified longitudinal record (software only)",
+  "kind": "software_build",
+  "summary": "A local application that imports CSV and text-based PDF laboratory reports, keeps the originals unchanged, extracts candidate observations, shows each beside its source, and requires explicit acceptance before any value becomes available to future calculations. Corrections create new versions instead of overwriting; possible duplicates and corrected reports are flagged, never merged; capillary and venous results stay in separate series. A follow-up pass (2026-10-21) added specimen provenance, collection-event matching and guards around destructive tests. Everything was exercised on synthetic fixtures only.",
+  "results": [
+    {
+      "check": "API unit and integration tests (pytest)",
+      "result": "75 passed (2026-10-20); 107 passed, 1 skipped on 2026-10-21 after the integrity pass and the evidence workflow (the skipped test needs the out-of-repo full-text cache and was run separately)",
+      "scope": "Exercises parsing, verification rules, database integrity triggers and the calculation-input boundary on synthetic files. Does not show that real laboratory reports parse correctly."
+    },
+    {
+      "check": "Browser test of the full records workflow (Playwright)",
+      "result": "1 passed (2026-10-20); 7 passed on 2026-10-21 including notebook checks",
+      "scope": "Upload, extraction, source review, correction, acceptance and longitudinal display work end to end in Chromium on synthetic data. Not a usability study."
+    },
+    {
+      "check": "Backup, destroy and restore",
+      "result": "Passed, plaintext and encrypted (32 observations, 5 documents restored identically)",
+      "scope": "The backup scripts restore an identical state on a disposable stack. Does not test off-site storage or long-term key management."
+    },
+    {
+      "check": "Clean checkout start with documented commands",
+      "result": "Passed",
+      "scope": "The documented commands start the stack from a copy of the repository."
+    },
+    {
+      "check": "Boundary mutation check",
+      "result": "Weakening the calculation-input guards made 3 tests fail",
+      "scope": "Shows the boundary tests can detect that specific regression."
+    }
+  ],
+  "what_this_is_not": [
+    "Not clinical validation: nothing here evaluates medical correctness, risk, or any health outcome.",
+    "Not external review: all tests were written and run by the same automated agent that wrote the software.",
+    "Not evidence of compatibility with any vendor's reports: no real report has been imported."
+  ],
+  "limitations": [
+    "Synthetic fixtures only; real-report ingestion is untested.",
+    "No OCR; image-only PDFs need manual entry.",
+    "No user authentication; local-only use.",
+    "No withheld tests written by someone other than the implementing agent."
+  ],
+  "next_steps": [
+    "Import one real, redacted report per source and record every extraction error.",
+    "Have someone other than the implementing agent write withheld ingestion tests."
+  ]
+}

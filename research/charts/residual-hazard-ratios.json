@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "id": "residual-hazard-ratios",
+  "evidence_id": "sniderman-2024-apob-discordance",
+  "rows": [
+    {
+      "row_id": "r1",
+      "claim_id": "hr-residual-apob-given-ldl",
+      "group": "apoB vs LDL-C",
+      "label": "Residual apoB (after LDL-C)",
+      "series": "apoB beyond the other marker"
+    },
+    {
+      "row_id": "r2",
+      "claim_id": "hr-residual-ldl-given-apob",
+      "group": "apoB vs LDL-C",
+      "label": "Residual LDL-C (after apoB)",
+      "series": "Other marker beyond apoB"
+    },
+    {
+      "row_id": "r3",
+      "claim_id": "hr-residual-apob-given-nonhdl",
+      "group": "apoB vs non-HDL-C",
+      "label": "Residual apoB (after non-HDL-C)",
+      "series": "apoB beyond the other marker"
+    },
+    {
+      "row_id": "r4",
+      "claim_id": "hr-residual-nonhdl-given-apob",
+      "group": "apoB vs non-HDL-C",
+      "label": "Residual non-HDL-C (after apoB)",
+      "series": "Other marker beyond apoB"
+    },
+    {
+      "row_id": "r5",
+      "claim_id": "hr-residual-apob-given-tg",
+      "group": "apoB vs triglycerides",
+      "label": "Residual apoB (after log TG)",
+      "series": "apoB beyond the other marker"
+    },
+    {
+      "row_id": "r6",
+      "claim_id": "hr-residual-tg-given-apob",
+      "group": "apoB vs triglycerides",
+      "label": "Residual log TG (after apoB)",
+      "series": "Other marker beyond apoB"
+    }
+  ],
+  "title": "Which marker carries information the other does not?",
+  "chart_type": "interval_points",
+  "data_file": "residual-hazard-ratios.csv",
+  "x_label": "Residual marker",
+  "y_label": "Hazard ratio per 1 SD (95% CI)",
+  "caption": "Discordance (residual) analysis: hazard ratio for the part of one marker not explained by the other, adjusted for HDL-C and standard risk factors.",
+  "reading_note": "Relative effects per standard deviation. A ratio of 1.00 means no additional association. These describe added prognostic information in the cohort, not a treatment effect.",
+  "reference_line": {
+    "value": 1.0,
+    "label": "1.00 = no added association"
+  }
+}

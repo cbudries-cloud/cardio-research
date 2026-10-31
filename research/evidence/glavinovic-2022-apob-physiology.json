@@ -1,0 +1,141 @@
+{
+ "schema_version": 1,
+ "id": "glavinovic-2022-apob-physiology",
+ "short_title": "Why ApoB counts atherogenic particles (review)",
+ "citation": {
+  "authors": [
+   "Glavinovic T",
+   "Thanassoulis G",
+   "de Graaf J",
+   "Couture P",
+   "Hegele RA",
+   "Sniderman AD"
+  ],
+  "title": "Physiological Bases for the Superiority of Apolipoprotein B Over Low-Density Lipoprotein Cholesterol and Non-High-Density Lipoprotein Cholesterol as a Marker of Cardiovascular Risk",
+  "journal": "Journal of the American Heart Association",
+  "year": 2022,
+  "volume": "11",
+  "issue": "20",
+  "pages": "e025858",
+  "doi": "10.1161/JAHA.122.025858",
+  "pmid": "36216435",
+  "pmcid": "PMC9673669",
+  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9673669/"
+ },
+ "access": {
+  "full_text_reviewed": true,
+  "full_text_source": "PubMed Central XML (efetch), converted to text; figures not inspected",
+  "license": null,
+  "supplement_reviewed": false,
+  "retrieved_on": "2026-10-21",
+  "abstract_only_note": null
+ },
+ "study": {
+  "design": "narrative_review",
+  "design_detail": "Narrative review of the physiology of apoB-containing lipoproteins.",
+  "evidence_type": "narrative_synthesis",
+  "population": "Not applicable",
+  "setting": "Review",
+  "sample_size": null,
+  "exposure_or_intervention": "Not applicable",
+  "comparator": "Not applicable",
+  "outcomes": [
+   "Not applicable"
+  ],
+  "follow_up": "Not applicable"
+ },
+ "claims": [
+  {
+   "id": "apob100-mass",
+   "statement": "Molecular size of apoB-100 as stated in the review.",
+   "kind": "descriptive",
+   "measure": "molecular_mass",
+   "scale": "descriptive",
+   "value": 550,
+   "decimals": 0,
+   "unit": "kDa",
+   "comparison": "none",
+   "population": "Not applicable",
+   "time_horizon": null,
+   "provenance": "reported",
+   "source_location": {
+    "section": "apoB Particles and apoB Particle Number",
+    "element": "first paragraph",
+    "quote": "apo B 100 , which is 4136 amino acids in length and 550 kDa in size"
+   }
+  },
+  {
+   "id": "apob-per-vldl",
+   "statement": "Number of apoB-100 molecules per VLDL particle.",
+   "kind": "descriptive",
+   "measure": "stoichiometry",
+   "scale": "descriptive",
+   "value": 1,
+   "decimals": 0,
+   "unit": "molecules per particle",
+   "comparison": "none",
+   "population": "Not applicable",
+   "time_horizon": null,
+   "provenance": "reported",
+   "source_location": {
+    "section": "Determinants of VLDL Particle Number",
+    "element": "paragraph on VLDL secretion",
+    "quote": "Each VLDL particle secreted by the liver (Figure ) is encircled by 1 molecule of apo B 100"
+   }
+  },
+  {
+   "id": "apob-per-ldl",
+   "statement": "Number of apoB-100 molecules per LDL particle (stated together with VLDL and Lp(a)).",
+   "kind": "descriptive",
+   "measure": "stoichiometry",
+   "scale": "descriptive",
+   "value": 1,
+   "decimals": 0,
+   "unit": "molecules per particle",
+   "comparison": "none",
+   "population": "Not applicable",
+   "time_horizon": null,
+   "provenance": "reported",
+   "source_location": {
+    "section": "Figure 1",
+    "element": "legend, apoB lipoprotein particles",
+    "quote": "One molecule of apo B 100 encircles VLDL, LDL, and Lp(a) particles."
+   }
+  }
+ ],
+ "findings_summary": "States that one molecule of apoB-100 encircles each VLDL, LDL and Lp(a) particle (text: 'One molecule of apo B 100 encircles VLDL, LDL, and Lp(a) particles'), that each LDL particle derives from a VLDL particle, and that apoB-100 is 550 kDa. On that basis plasma apoB concentration is a count of atherogenic particles, while cholesterol per particle varies.",
+ "limitations": [
+  {
+   "text": "Narrative review by authors who advocate ApoB; claims are the authors' statements, not new data.",
+   "source": "identified_in_review"
+  },
+  {
+   "text": "The 550 kDa figure is cited by the review, not measured in it; converting mg/dL to particle concentration depends on this value and on the assay's calibration.",
+   "source": "identified_in_review"
+  }
+ ],
+ "applicability_constraints": [
+  "Physiological premises, not a clinical outcome study.",
+  "Assumes fasting conditions in which apoB-48 particles are negligible."
+ ],
+ "discrepancies": [
+  {
+   "description": "The review gives apoB-100 as 4136 amino acids; the commonly cited mature apoB-100 length is 4536. Likely a typographical error in the review.",
+   "locations": [
+    "apoB Particles and apoB Particle Number, first paragraph"
+   ],
+   "handling": "Not relied on; only the 550 kDa value is used, and the conversion it supports is labelled as dependent on that value."
+  }
+ ],
+ "interpretation": "If each atherogenic particle carries one apoB-100, apoB in mg/dL can be expressed as a particle concentration (about 18.2 nmol/L per mg/dL at 550 kDa). LDL particles are a subset of apoB-containing particles, so an accurate LDL particle number should not exceed that total. More small LDL particles can raise LDL particle number relative to LDL cholesterol, but cannot by themselves make LDL particle number exceed the apoB particle count.",
+ "review": {
+  "status": "source_verified",
+  "verified_by": "Automated agent (Claude), interactive session; not an independent or clinical review",
+  "verified_on": "2026-10-21",
+  "method": "Each value matched against a verbatim quote from the PMC full text, checked by evidence_tools.validate against the cached text.",
+  "independent_review": false
+ },
+ "publication": {
+  "status": "local_notebook_only"
+ }
+}

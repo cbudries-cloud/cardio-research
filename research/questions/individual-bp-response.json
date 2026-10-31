@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "id": "individual-bp-response",
+  "question": "What evidence supports measuring an individual's response rather than assuming the average response applies?",
+  "evidence_ids": [
+    "sundstrom-2023-physic"
+  ],
+  "motivation": "In a randomized, double-blind repeated crossover trial, the average difference between two drugs was small for some pairs (for example amlodipine vs candesartan, −0.8 mm Hg), while the estimated person-to-person SD of that difference was large (8.6 mm Hg), and participants' first observed differences partly repeated in a second crossover (slope 0.40). For other pairs (lisinopril vs candesartan, hydrochlorothiazide vs amlodipine) large personal differences were excluded. So the average can misdescribe individuals for some comparisons and not others, and telling the two apart required repeated, blinded, ambulatory measurement.",
+  "project_connection": "The brief's first prediction target is repeated blood-pressure measurement, and any later experiment is limited to low-risk behavioural comparisons; medication changes are outside the system's authority. What transfers from this trial is design, not drugs: an individual comparison is only informative if within-person variation is measured (repeat periods), if periods are long enough and separated by washouts to limit carryover, if measurement follows a fixed protocol, and if a result is replicated before it is believed. The observation workflow should therefore establish measurement quality and within-person variability before any comparison is proposed.",
+  "required_personal_observations": [
+    {
+      "observation": "Repeated blood-pressure readings under a fixed protocol (validated upper-arm device, rest, two readings one minute apart), with timestamps",
+      "why": "Within-person variation sets the floor below which no personal difference can be detected.",
+      "currently_available": "no"
+    },
+    {
+      "observation": "Measurement adherence and missing-reading patterns over an observation-only period",
+      "why": "The trial's estimates depended on high adherence; gaps would bias any comparison.",
+      "currently_available": "no"
+    },
+    {
+      "observation": "Current medication list and any planned changes (for exclusion, not for experimentation)",
+      "why": "Medication changes confound behavioural comparisons and are outside the system's authority.",
+      "currently_available": "unknown"
+    },
+    {
+      "observation": "Any clinician-reviewed blood-pressure history",
+      "why": "Context for eligibility and safety checks before any comparison.",
+      "currently_available": "not_imported"
+    }
+  ],
+  "decision_relevance": [
+    {
+      "if_observed": "Within-person day-to-day variation is large relative to the effect a behavioural change could plausibly produce",
+      "would_change": "A comparison would need many repeated periods or would be uninformative; remain in observation mode."
+    },
+    {
+      "if_observed": "Measurements are stable and adherence is high over the observation period",
+      "would_change": "A predefined, low-risk behavioural comparison with replication becomes feasible to design (subject to eligibility and safety review)."
+    },
+    {
+      "if_observed": "Blood pressure readings suggest hypertension",
+      "would_change": "This is a matter for clinical review; the system does not run medication experiments or interpret the reading as a diagnosis."
+    }
+  ],
+  "what_remains_uncertain": [
+    "Whether the estimated personalization benefit (3.1 mm Hg vs always using lisinopril; 4.4 mm Hg theoretical maximum if doses had been equipotent; both model-based) is realized when personalized choices are actually assigned and followed.",
+    "Generalizability beyond a single Swedish clinic, these four drugs at these doses, and monotherapy.",
+    "Whether shorter or home-measured comparisons can identify personal responses reliably; the trial used ambulatory monitoring over about a year.",
+    "Whether behavioural interventions show similar person-to-person heterogeneity; this trial tested drugs only."
+  ],
+  "what_cannot_be_concluded": [
+    "Which antihypertensive would suit the participant, or whether any is needed: no blood-pressure data exist, and drug choice is outside the system's authority.",
+    "That personalized treatment has been shown to improve outcomes: the benefit is estimated from a model, and the trial's outcome is blood pressure, not cardiovascular events.",
+    "That a single before/after comparison at home would reveal a personal response: the trial needed blinded, repeated, ambulatory periods to separate response from noise."
+  ],
+  "personal_applicability": {
+    "status": "not_assessed",
+    "reason": "No personal medical records or blood-pressure measurements have been imported. Assessment would first require an observation-only measurement period under a fixed protocol."
+  },
+  "chart_ids": [
+    "bp-average-vs-person-variation",
+    "bp-repeat-crossover-slopes"
+  ]
+}

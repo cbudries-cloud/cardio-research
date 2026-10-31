@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "id": "cumulative-ldl-hazard-ratios",
+  "evidence_id": "zhang-2021-cumulative-ldl",
+  "rows": [
+    {
+      "row_id": "r1",
+      "claim_id": "hr-index-m1",
+      "group": "Single midlife LDL-C",
+      "label": "Midlife LDL-C",
+      "series": "Adjusted for risk factors"
+    },
+    {
+      "row_id": "r2",
+      "claim_id": "hr-cumulative-m1",
+      "group": "Cumulative LDL-C",
+      "label": "Cumulative",
+      "series": "Adjusted for risk factors"
+    },
+    {
+      "row_id": "r3",
+      "claim_id": "hr-cumulative-m2",
+      "group": "Cumulative LDL-C",
+      "label": "Cumulative",
+      "series": "Also adjusted for midlife LDL-C"
+    },
+    {
+      "row_id": "r4",
+      "claim_id": "hr-twa-m1",
+      "group": "Time-weighted average",
+      "label": "TWA",
+      "series": "Adjusted for risk factors"
+    },
+    {
+      "row_id": "r5",
+      "claim_id": "hr-twa-m2",
+      "group": "Time-weighted average",
+      "label": "TWA",
+      "series": "Also adjusted for midlife LDL-C"
+    },
+    {
+      "row_id": "r6",
+      "claim_id": "hr-slope-m1",
+      "group": "LDL-C slope",
+      "label": "Slope",
+      "series": "Adjusted for risk factors"
+    },
+    {
+      "row_id": "r7",
+      "claim_id": "hr-slope-m2",
+      "group": "LDL-C slope",
+      "label": "Slope",
+      "series": "Also adjusted for midlife LDL-C"
+    }
+  ],
+  "title": "Cumulative and time-weighted average LDL-C stay associated with CHD after accounting for the midlife value; slope does not",
+  "chart_type": "interval_points",
+  "data_file": "cumulative-ldl-hazard-ratios.csv",
+  "x_label": "LDL-C variable (age 18 to midlife index visit)",
+  "y_label": "CHD hazard ratio, top vs bottom quartile",
+  "caption": "Hazard ratios (95% CI) for incident coronary heart disease comparing the top with the bottom quartile of each LDL-C variable. Grey: adjusted for demographic and clinical risk factors. Orange: additionally adjusted for the single LDL-C measured at the midlife index visit (no such model for the midlife value itself).",
+  "reading_note": "Relative comparisons of extreme quartiles in pooled US cohorts over a median 16 years; not absolute risks and not a personal estimate. Early-life LDL-C was partly imputed in the study, so 'cumulative' here is partly modelled. Hazard ratios for different variables compare different quartile contrasts, and their intervals overlap, so this chart cannot show that one variable is a 'stronger' risk factor than another.",
+  "reference_line": {
+    "value": 1.0,
+    "label": "1.00 = no association"
+  }
+}

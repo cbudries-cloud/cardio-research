@@ -1,0 +1,18 @@
+{
+ "id": "quest-91604-ion-mobility",
+ "kind": "laboratory_test_directory",
+ "laboratory": "Quest Diagnostics",
+ "test": "Cardio IQ® Lipoprotein Fractionation, Ion Mobility",
+ "test_code": "91604",
+ "url": "https://testdirectory.questdiagnostics.com/test/test-detail/91604/cardio-iq-ion-mobility",
+ "retrieved_on": "2026-10-21",
+ "retrieved_by": "Browser automation (public page, no personal data)",
+ "statements": [
+  "Methodology Ion Mobility",
+  "This test was developed and its analytical performance characteristics have been determined by Quest Diagnostics Cardiometabolic Center of Excellence at Cleveland HeartLab. Its has not been cleared or approved by the U.S. Food and Drug Administration. This assay has been validated pursuant to the CLIA regulations and is used for clinical purposes."
+ ],
+ "not_found": [
+  "Quest's apolipoprotein B methodology: test code guessed as 7016 returned 'not found'; directory search by URL returned HTTP 400 and the site search returned no results (three attempts, 2026-10-21)."
+ ],
+ "use": "Identifies the method of a report row only when the report itself names this test or method; never inferred from a performing-laboratory code alone."
+}

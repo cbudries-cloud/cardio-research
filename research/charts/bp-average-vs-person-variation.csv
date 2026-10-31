@@ -1,0 +1,13 @@
+row_id,claim_id,group,label,series,value,lower,upper,decimals,unit,provenance,source_section,source_element
+r1,meandiff-aml-can,Aml vs Can,Aml vs Can,Average difference (95% CI),-0.8,-1.9,0.4,1,mm Hg,reported,Table 2,row 'Amlodipine-candesartan' (cells joined with ' | ')
+r2,sd-aml-can,Aml vs Can,Aml vs Can,Person-to-person SD of the difference (95% CI),8.6,7.1,10.3,1,mm Hg,reported,Table 2,row 'Amlodipine-candesartan' (cells joined with ' | ')
+r3,meandiff-aml-lis,Aml vs Lis,Aml vs Lis,Average difference (95% CI),1.4,0.2,2.5,1,mm Hg,reported,Table 2,row 'Amlodipine-lisinopril' (cells joined with ' | ')
+r4,sd-aml-lis,Aml vs Lis,Aml vs Lis,Person-to-person SD of the difference (95% CI),8.9,7.5,10.6,1,mm Hg,reported,Table 2,row 'Amlodipine-lisinopril' (cells joined with ' | ')
+r5,meandiff-hctz-aml,HCTZ vs Aml,HCTZ vs Aml,Average difference (95% CI),5.1,3.9,6.2,1,mm Hg,reported,Table 2,row 'Hydrochlorothiazide-amlodipine' (cells joined with ' | ')
+r6,sd-hctz-aml,HCTZ vs Aml,HCTZ vs Aml,Person-to-person SD of the difference (95% CI),2.4,1.1,3.9,1,mm Hg,reported,Table 2,row 'Hydrochlorothiazide-amlodipine' (cells joined with ' | ')
+r7,meandiff-hctz-can,HCTZ vs Can,HCTZ vs Can,Average difference (95% CI),4.3,3.2,5.4,1,mm Hg,reported,Table 2,row 'Hydrochlorothiazide-candesartan' (cells joined with ' | ')
+r8,sd-hctz-can,HCTZ vs Can,HCTZ vs Can,Person-to-person SD of the difference (95% CI),7.2,5.9,8.8,1,mm Hg,reported,Table 2,row 'Hydrochlorothiazide-candesartan' (cells joined with ' | ')
+r9,meandiff-hctz-lis,HCTZ vs Lis,HCTZ vs Lis,Average difference (95% CI),6.4,5.3,7.6,1,mm Hg,reported,Table 2,row 'Hydrochlorothiazide-lisinopril' (cells joined with ' | ')
+r10,sd-hctz-lis,HCTZ vs Lis,HCTZ vs Lis,Person-to-person SD of the difference (95% CI),7.9,6.3,9.5,1,mm Hg,reported,Table 2,row 'Hydrochlorothiazide-lisinopril' (cells joined with ' | ')
+r11,meandiff-lis-can,Lis vs Can,Lis vs Can,Average difference (95% CI),-2.1,-3.3,-1.0,1,mm Hg,reported,Table 2,row 'Lisinopril-candesartan' (cells joined with ' | ')
+r12,sd-lis-can,Lis vs Can,Lis vs Can,Person-to-person SD of the difference (95% CI),3.6,0.0,5.4,1,mm Hg,reported,Table 2,row 'Lisinopril-candesartan' (cells joined with ' | ')

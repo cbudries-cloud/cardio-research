@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "id": "apob-ldl-discordance",
+  "question": "What information can ApoB add when cholesterol measurements appear similar?",
+  "evidence_ids": [
+    "sniderman-2024-apob-discordance"
+  ],
+  "motivation": "In UK Biobank, apoB and LDL-C correlated at r = .96, yet among people with the same LDL-C the apoB values spanned a wide range (85.8–108.8 mg/dL at LDL-C 130 mg/dL to cover about 95% of them). Within the same LDL-C band, the high-apoB tail had a higher 10-year ASCVD rate than the low-apoB tail (7.3 vs 4.0), and residual apoB carried prognostic information that residual LDL-C did not. A stable or unremarkable LDL-C history therefore narrows, but does not pin down, where a person sits in the apoB distribution.",
+  "project_connection": "The records workflow already stores LDL-C, non-HDL-C and apoB as separate normalized tests with their own series, units and collection methods. This question motivates (1) checking, once real records are verified, whether apoB was ever measured and on which dates and specimens, (2) pairing apoB with LDL-C and non-HDL-C from the same collection event (same accession) before comparing them, and (3) never inferring an apoB value from LDL-C.",
+  "required_personal_observations": [
+    {
+      "observation": "Verified apoB results with collection dates, units and laboratory",
+      "why": "Without measured apoB there is nothing to compare; apoB cannot be derived from LDL-C.",
+      "currently_available": "not_imported"
+    },
+    {
+      "observation": "LDL-C (with calculated vs direct method) and non-HDL-C from the same collection events as apoB",
+      "why": "Discordance is only meaningful within the same draw; mixing dates or capillary and venous series would confound it.",
+      "currently_available": "not_imported"
+    },
+    {
+      "observation": "Triglycerides and HDL-C from the same draws",
+      "why": "Calculated LDL-C depends on them, and the paper's models adjust for HDL-C.",
+      "currently_available": "not_imported"
+    },
+    {
+      "observation": "Lipid-lowering medication status at each draw",
+      "why": "The cohort excluded people on therapy; treated values are a different situation.",
+      "currently_available": "unknown"
+    }
+  ],
+  "decision_relevance": [
+    {
+      "if_observed": "apoB has never been measured in the verified records",
+      "would_change": "The open question becomes whether to obtain a measurement for clinical review; the system can state the gap but does not order tests."
+    },
+    {
+      "if_observed": "apoB measured and roughly where the population distribution would place it for the paired LDL-C",
+      "would_change": "Discordance is not a reason for further investigation on current information."
+    },
+    {
+      "if_observed": "apoB measured and well above the range typical for the paired LDL-C, replicated in a second draw",
+      "would_change": "A specific, evidence-backed question for clinical review; not a treatment instruction."
+    },
+    {
+      "if_observed": "apoB available only from capillary/home-kit samples",
+      "would_change": "Comparability with venous lipid panels must be established before interpreting discordance."
+    }
+  ],
+  "what_remains_uncertain": [
+    "How often apoB/LDL-C discordance changes a clinical decision for an individual, as opposed to improving prediction on average.",
+    "Whether treating to apoB targets improves outcomes compared with LDL-C targets; this study does not test it.",
+    "Generalizability beyond UK Biobank's population, and to people already on lipid-lowering therapy.",
+    "Analytical variation of apoB and LDL-C assays across laboratories and capillary vs venous collection."
+  ],
+  "what_cannot_be_concluded": [
+    "Any personal risk estimate. The 10-year rates are UK Biobank group rates, not the participant's risk.",
+    "That apoB is high or low for the participant: no personal records have been imported or verified.",
+    "That lowering apoB rather than LDL-C would prevent events: the study is observational and does not compare treatment strategies."
+  ],
+  "personal_applicability": {
+    "status": "not_assessed",
+    "reason": "No personal medical records have been imported or verified. Applicability requires verified apoB, LDL-C and non-HDL-C from the same collection events."
+  },
+  "chart_ids": [
+    "apob-range-at-fixed-ldl",
+    "event-rates-high-vs-low-apob",
+    "residual-hazard-ratios"
+  ]
+}

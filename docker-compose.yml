@@ -1,0 +1,120 @@
+# Local-only stack. Every published port binds to 127.0.0.1 (see docs/safety-boundaries.md).
+# Do not change these bindings to 0.0.0.0 or deploy this file remotely: there is no
+# user authentication in this build.
+
+name: ${COMPOSE_PROJECT_NAME:-cardio}
+
+x-api-env: &api-env
+  CARDIO_DATABASE_URL: postgresql+psycopg://cardio:${POSTGRES_PASSWORD:-cardio-local-only}@db:5432/cardio
+  CARDIO_DOCUMENT_ROOT: /data/documents
+  CARDIO_ALLOWED_ORIGINS: ${CARDIO_ALLOWED_ORIGINS:-http://127.0.0.1:${WEB_PORT:-3000},http://localhost:${WEB_PORT:-3000}}
+  CARDIO_ALLOWED_HOSTS: ${CARDIO_ALLOWED_HOSTS:-127.0.0.1,localhost,api}
+  # Live research runs (see docs/live-provider-setup.md). The key is a file, never an env value.
+  CARDIO_RESEARCH_PROVIDER: ${CARDIO_RESEARCH_PROVIDER:-anthropic}
+  CARDIO_LLM_MODEL: ${CARDIO_LLM_MODEL:-claude-opus-5-5}
+  CARDIO_LLM_API_KEY_FILE: /run/cardio-secrets/anthropic_api_key
+  # Non-identifying literature search for investigations (fixed queries; D-057). Test stacks set it off.
+  CARDIO_LITERATURE_SEARCH: ${CARDIO_LITERATURE_SEARCH:-pubmed}
+
+services:
+  db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: cardio
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-cardio-local-only}
+      POSTGRES_DB: cardio
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U cardio -d cardio"]
+      interval: 2s
+      timeout: 3s
+      retries: 30
+    # No published port: only the api container and backup scripts (via exec) reach it.
+
+  api:
+    build:
+      context: services/api
+    environment: *api-env
+    volumes:
+      - documents:/data/documents
+      - ./research:/research:ro  # public evidence ledger only; never private records
+      - ${CARDIO_SECRETS_DIR:-${HOME}/.cardio-secrets}:/run/cardio-secrets:ro  # API key file; test stacks mount an empty dir
+    ports:
+      - "127.0.0.1:${API_PORT:-8000}:8000"
+    depends_on:
+      db:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/api/v1/health')"]
+      interval: 3s
+      timeout: 3s
+      retries: 40
+
+  web:
+    build:
+      context: apps/web
+      args:
+        API_INTERNAL_URL: http://api:8000
+    environment:
+      NEXT_TELEMETRY_DISABLED: "1"
+    ports:
+      - "127.0.0.1:${WEB_PORT:-3000}:3000"
+    depends_on:
+      api:
+        condition: service_healthy
+
+  # Public research notebook: a separate app with no API proxy, no database and no access to
+  # private documents. It is generated from research/ at build time.
+  notebook:
+    build:
+      context: .
+      dockerfile: apps/notebook/Dockerfile
+    environment:
+      NEXT_TELEMETRY_DISABLED: "1"
+    ports:
+      - "127.0.0.1:${NOTEBOOK_PORT:-3100}:3100"
+
+  # --- test-only services (profiles keep them out of `docker compose up`) ------
+
+  api-test:
+    profiles: ["test"]
+    build:
+      context: services/api
+      args:
+        INSTALL_DEV: "true"
+    environment:
+      CARDIO_DATABASE_URL: postgresql+psycopg://cardio:${POSTGRES_PASSWORD:-cardio-local-only}@db:5432/cardio_test
+      CARDIO_ADMIN_DATABASE_URL: postgresql+psycopg://cardio:${POSTGRES_PASSWORD:-cardio-local-only}@db:5432/postgres
+      CARDIO_DOCUMENT_ROOT: /tmp/test-documents
+    volumes:
+      - ./tests:/tests:ro
+      - ./fixtures:/fixtures:ro
+      - ./research:/research:ro
+      - ./packages/evidence-tools:/packages/evidence-tools:ro
+    working_dir: /app
+    command: ["python", "-m", "pytest", "-p", "no:cacheprovider", "/tests"]
+    depends_on:
+      db:
+        condition: service_healthy
+
+  e2e:
+    profiles: ["e2e"]
+    image: mcr.microsoft.com/playwright:v1.64.1-noble
+    working_dir: /e2e
+    environment:
+      E2E_BASE_URL: http://web:3000
+      E2E_NOTEBOOK_URL: http://notebook:3100
+      CI: "1"
+    volumes:
+      - ./tests/end-to-end:/e2e
+      - ./fixtures:/fixtures:ro
+      - ./research:/research:ro
+    command: ["sh", "-c", "npm ci --no-audit --no-fund && npx playwright test"]
+    depends_on:
+      web:
+        condition: service_started
+
+volumes:
+  pgdata:
+  documents:

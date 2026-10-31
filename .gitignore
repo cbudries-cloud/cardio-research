@@ -1,0 +1,19 @@
+# Never commit health records, backups or local data.
+*.dump
+*.dump.enc
+*.tar.enc
+/backups/
+/data/
+/real-records/
+.env
+.env.*
+
+node_modules/
+.next/
+next-env.d.ts
+tests/end-to-end/test-results/
+__pycache__/
+*.pyc
+.pytest_cache/
+.DS_Store
+*.tsbuildinfo

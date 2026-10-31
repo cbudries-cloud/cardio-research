@@ -1,0 +1,7 @@
+row_id,claim_id,group,label,series,value,lower,upper,decimals,unit,provenance,source_section,source_element
+r1,slope-aml-can,Aml vs Can,Aml vs Can,Repeat-crossover slope (95% CI),0.40,0.18,0.62,2,mm Hg per mm Hg,reported,Table 2,row 'Amlodipine-candesartan' (cells joined with ' | ')
+r2,slope-aml-lis,Aml vs Lis,Aml vs Lis,Repeat-crossover slope (95% CI),0.71,0.36,1.05,2,mm Hg per mm Hg,reported,Table 2,row 'Amlodipine-lisinopril' (cells joined with ' | ')
+r3,slope-hctz-aml,HCTZ vs Aml,HCTZ vs Aml,Repeat-crossover slope (95% CI),0.33,-0.07,0.73,2,mm Hg per mm Hg,reported,Table 2,row 'Hydrochlorothiazide-amlodipine' (cells joined with ' | ')
+r4,slope-hctz-can,HCTZ vs Can,HCTZ vs Can,Repeat-crossover slope (95% CI),0.44,0.05,0.82,2,mm Hg per mm Hg,reported,Table 2,row 'Hydrochlorothiazide-candesartan' (cells joined with ' | ')
+r5,slope-hctz-lis,HCTZ vs Lis,HCTZ vs Lis,Repeat-crossover slope (95% CI),0.40,0.19,0.60,2,mm Hg per mm Hg,reported,Table 2,row 'Hydrochlorothiazide-lisinopril' (cells joined with ' | ')
+r6,slope-lis-can,Lis vs Can,Lis vs Can,Repeat-crossover slope (95% CI),0.11,-0.18,0.40,2,mm Hg per mm Hg,reported,Table 2,row 'Lisinopril-candesartan' (cells joined with ' | ')

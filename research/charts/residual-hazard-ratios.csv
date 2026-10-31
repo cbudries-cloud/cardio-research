@@ -1,0 +1,7 @@
+row_id,claim_id,group,label,series,value,lower,upper,decimals,unit,provenance,source_section,source_element
+r1,hr-residual-apob-given-ldl,apoB vs LDL-C,Residual apoB (after LDL-C),apoB beyond the other marker,1.06,1.04,1.07,2,ratio per 1 SD,reported,Results,paragraph 'Associations on follow-up' (Table 2)
+r2,hr-residual-ldl-given-apob,apoB vs LDL-C,Residual LDL-C (after apoB),Other marker beyond apoB,0.99,0.97,1.00,2,ratio per 1 SD,reported,Results,paragraph 'Associations on follow-up' (Table 2)
+r3,hr-residual-apob-given-nonhdl,apoB vs non-HDL-C,Residual apoB (after non-HDL-C),apoB beyond the other marker,1.04,1.03,1.06,2,ratio per 1 SD,reported,Abstract,Results paragraph (also Table 3)
+r4,hr-residual-nonhdl-given-apob,apoB vs non-HDL-C,Residual non-HDL-C (after apoB),Other marker beyond apoB,1.00,0.99,1.01,2,ratio per 1 SD,reported,Table 3,row 'Non-HDL-C residual' (cells joined with ' | ')
+r5,hr-residual-apob-given-tg,apoB vs triglycerides,Residual apoB (after log TG),apoB beyond the other marker,1.13,1.12,1.15,2,ratio per 1 SD,reported,Results,paragraph on triglycerides after Table 3 (Supplementary Table S8)
+r6,hr-residual-tg-given-apob,apoB vs triglycerides,Residual log TG (after apoB),Other marker beyond apoB,1.01,0.99,1.03,2,ratio per 1 SD,reported,Results,paragraph on triglycerides after Table 3 (Supplementary Table S8)

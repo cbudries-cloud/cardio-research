@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "id": "cumulative-ldl-exposure",
+  "question": "What can a current measurement miss about earlier exposure, and what could historical laboratory records legitimately help establish?",
+  "evidence_ids": [
+    "zhang-2021-cumulative-ldl"
+  ],
+  "motivation": "In four pooled US cohorts, cumulative and time-weighted average LDL-C from age 18 to midlife remained associated with coronary heart disease after adjusting for the single midlife LDL-C (top vs bottom quartile HR 1.57 and 1.69), and the midlife value correlated only moderately with the long-term measures (r 0.6-0.7). A single current value therefore leaves part of the exposure history unobserved. The same study also shows the limit: its early-life values were partly imputed, because the cohorts had restricted enrollment ages (ARIC, for example, enrolled people aged 45 or older) and measurements across young adulthood were rare even in research cohorts.",
+  "project_connection": "This is the reason the records workflow preserves every historical result with its collection date, laboratory, method (calculated vs direct LDL-C) and collection method, and keeps finger-prick results as a separate series. Verified historical records can establish what LDL-C was on the dates it was measured, whether elevated values persisted across measurements, and whether an apparent change coincides with a change of laboratory, method or specimen. They do not justify inventing exposure during unmeasured years: the system will not compute a single 'cumulative LDL-C' number from sparse records without stating every interpolation assumption, and will not treat the study's quartile cutoffs as personal thresholds.",
+  "required_personal_observations": [
+    {
+      "observation": "Every available historical LDL-C result with collection date, laboratory and calculated vs direct method",
+      "why": "The measured points are the only legitimate anchor for any statement about past exposure.",
+      "currently_available": "not_imported"
+    },
+    {
+      "observation": "Collection method (venous vs finger-prick) for each historical result",
+      "why": "Capillary and venous results are kept separate until comparability is established; a trend across them may be an artefact.",
+      "currently_available": "not_imported"
+    },
+    {
+      "observation": "Lipid-lowering medication periods, if any",
+      "why": "Treated and untreated values describe different exposures; the study's sensitivity analysis excluded ever-treated participants.",
+      "currently_available": "unknown"
+    },
+    {
+      "observation": "Age at each measurement (derived from date of birth, kept private)",
+      "why": "The study's exposure window is age 18 to 40-60; coverage of that window determines what can be said.",
+      "currently_available": "not_imported"
+    }
+  ],
+  "decision_relevance": [
+    {
+      "if_observed": "Only a few results from 2022-2024 are available",
+      "would_change": "The record can describe those years only. Statements about lifetime exposure remain unsupported, and the gap is reported rather than filled."
+    },
+    {
+      "if_observed": "Repeated venous results from the same laboratory and method are consistently elevated",
+      "would_change": "'Persistently elevated across the measured interval' becomes an establishable, source-backed statement for clinical review."
+    },
+    {
+      "if_observed": "An apparent rise or fall coincides with a switch of laboratory, method or finger-prick vs venous collection",
+      "would_change": "The trend is reported as uninterpretable until comparability is established, rather than as a change in exposure."
+    },
+    {
+      "if_observed": "Older records from other sources (for example, earlier clinic panels) are found and verified",
+      "would_change": "Coverage of the exposure window increases; each added point still stands alone without interpolation."
+    }
+  ],
+  "what_remains_uncertain": [
+    "How much of the association reflects measured exposure versus the imputation model used for unobserved early-life values.",
+    "Absolute CHD risk differences between quartiles, which the paper's text does not report.",
+    "Whether lowering LDL-C earlier in life changes outcomes; this observational study does not test it.",
+    "How to combine sparse, mixed-method personal measurements into an exposure estimate without importing population assumptions."
+  ],
+  "what_cannot_be_concluded": [
+    "The participant's cumulative LDL-C exposure or quartile: no records have been imported, and the measured years would cover only part of the study's exposure window.",
+    "Any personal CHD risk: the hazard ratios are relative comparisons between quartiles in US cohorts.",
+    "That a trend exists in the 2022-2024 records before they are verified and their methods and specimens are known to be comparable."
+  ],
+  "personal_applicability": {
+    "status": "not_assessed",
+    "reason": "No personal medical records have been imported or verified. Assessment requires the verified historical LDL-C series with dates, methods and collection methods."
+  },
+  "chart_ids": [
+    "cumulative-ldl-hazard-ratios"
+  ]
+}

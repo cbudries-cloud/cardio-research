@@ -1,0 +1,102 @@
+{
+  "schema_version": 1,
+  "id": "bp-average-vs-person-variation",
+  "evidence_id": "sundstrom-2023-physic",
+  "rows": [
+    {
+      "row_id": "r1",
+      "claim_id": "meandiff-aml-can",
+      "group": "Aml vs Can",
+      "label": "Aml vs Can",
+      "series": "Average difference (95% CI)"
+    },
+    {
+      "row_id": "r2",
+      "claim_id": "sd-aml-can",
+      "group": "Aml vs Can",
+      "label": "Aml vs Can",
+      "series": "Person-to-person SD of the difference (95% CI)"
+    },
+    {
+      "row_id": "r3",
+      "claim_id": "meandiff-aml-lis",
+      "group": "Aml vs Lis",
+      "label": "Aml vs Lis",
+      "series": "Average difference (95% CI)"
+    },
+    {
+      "row_id": "r4",
+      "claim_id": "sd-aml-lis",
+      "group": "Aml vs Lis",
+      "label": "Aml vs Lis",
+      "series": "Person-to-person SD of the difference (95% CI)"
+    },
+    {
+      "row_id": "r5",
+      "claim_id": "meandiff-hctz-aml",
+      "group": "HCTZ vs Aml",
+      "label": "HCTZ vs Aml",
+      "series": "Average difference (95% CI)"
+    },
+    {
+      "row_id": "r6",
+      "claim_id": "sd-hctz-aml",
+      "group": "HCTZ vs Aml",
+      "label": "HCTZ vs Aml",
+      "series": "Person-to-person SD of the difference (95% CI)"
+    },
+    {
+      "row_id": "r7",
+      "claim_id": "meandiff-hctz-can",
+      "group": "HCTZ vs Can",
+      "label": "HCTZ vs Can",
+      "series": "Average difference (95% CI)"
+    },
+    {
+      "row_id": "r8",
+      "claim_id": "sd-hctz-can",
+      "group": "HCTZ vs Can",
+      "label": "HCTZ vs Can",
+      "series": "Person-to-person SD of the difference (95% CI)"
+    },
+    {
+      "row_id": "r9",
+      "claim_id": "meandiff-hctz-lis",
+      "group": "HCTZ vs Lis",
+      "label": "HCTZ vs Lis",
+      "series": "Average difference (95% CI)"
+    },
+    {
+      "row_id": "r10",
+      "claim_id": "sd-hctz-lis",
+      "group": "HCTZ vs Lis",
+      "label": "HCTZ vs Lis",
+      "series": "Person-to-person SD of the difference (95% CI)"
+    },
+    {
+      "row_id": "r11",
+      "claim_id": "meandiff-lis-can",
+      "group": "Lis vs Can",
+      "label": "Lis vs Can",
+      "series": "Average difference (95% CI)"
+    },
+    {
+      "row_id": "r12",
+      "claim_id": "sd-lis-can",
+      "group": "Lis vs Can",
+      "label": "Lis vs Can",
+      "series": "Person-to-person SD of the difference (95% CI)"
+    }
+  ],
+  "title": "The average difference between two drugs can hide large person-to-person differences",
+  "chart_type": "interval_points",
+  "data_file": "bp-average-vs-person-variation.csv",
+  "x_label": "Drug pair (first minus second)",
+  "y_label": "Daytime ambulatory SBP, mm Hg",
+  "caption": "For each drug pair: the average difference in daytime ambulatory systolic blood pressure (first drug minus second; negative favours the first) and the estimated between-person standard deviation of that difference, both with 95% CIs, from Table 2. Aml amlodipine, Can candesartan, Lis lisinopril, HCTZ hydrochlorothiazide.",
+  "reading_note": "Randomized, within-person comparisons in one trial population. A large SD next to a small average means people differ in which drug suits them; it is not a measure of anyone's personal response. The SD is a model estimate.",
+  "reference_line": {
+    "value": 0.0,
+    "label": "0 = no average difference (the SD series is non-negative by definition)"
+  }
+}

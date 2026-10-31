@@ -1,0 +1,137 @@
+{
+ "schema_version": 1,
+ "id": "williams-2014-four-subfraction-methods",
+ "short_title": "Four lipoprotein subfraction methods compared (HATS)",
+ "citation": {
+  "authors": [
+   "Williams PT",
+   "Zhao XQ",
+   "Marcovina SM",
+   "Otvos JD",
+   "Brown BG",
+   "Krauss RM"
+  ],
+  "title": "Comparison of four methods of analysis of lipoprotein particle subfractions for their association with angiographic progression of coronary artery disease",
+  "journal": "Atherosclerosis",
+  "year": 2014,
+  "volume": "233",
+  "issue": "2",
+  "pages": "713-720",
+  "doi": "10.1016/j.atherosclerosis.2014.01.034",
+  "pmid": "24603218",
+  "pmcid": "PMC3990359",
+  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3990359/"
+ },
+ "access": {
+  "full_text_reviewed": true,
+  "full_text_source": "PubMed Central XML (efetch), converted to text; tables not reviewed cell by cell",
+  "license": null,
+  "supplement_reviewed": false,
+  "retrieved_on": "2026-10-21",
+  "abstract_only_note": null
+ },
+ "study": {
+  "design": "trial_secondary_analysis",
+  "design_detail": "Within the HDL-Atherosclerosis Treatment Study (simvastatin plus niacin and/or antioxidants vs placebo), lipoprotein subfractions were measured by gradient gel electrophoresis, vertical auto profile, NMR and ion mobility, and related to angiographic stenosis progression.",
+  "evidence_type": "observational_association",
+  "population": "Patients with coronary disease and reduced HDL cholesterol",
+  "setting": "HATS trial (USA)",
+  "sample_size": 136,
+  "exposure_or_intervention": "Subfraction concentrations by four methods",
+  "comparator": "Between-method comparison",
+  "outcomes": [
+   "Annual change in percent stenosis"
+  ],
+  "follow_up": "3 years"
+ },
+ "claims": [
+  {
+   "id": "n-analyzed",
+   "statement": "Patients analysed.",
+   "kind": "descriptive",
+   "measure": "count",
+   "scale": "descriptive",
+   "value": 136,
+   "decimals": 0,
+   "unit": "patients",
+   "comparison": "none",
+   "population": "Analytic sample",
+   "time_horizon": null,
+   "provenance": "reported",
+   "source_location": {
+    "section": "Results",
+    "element": "first paragraph",
+    "quote": "leaving 136 (119 men, 17 women) for analyses"
+   }
+  },
+  {
+   "id": "r-ldl-diameter-im-gge-baseline",
+   "statement": "Correlation of ion-mobility with GGE peak LDL diameter at baseline.",
+   "kind": "descriptive",
+   "measure": "correlation",
+   "scale": "descriptive",
+   "value": 0.85,
+   "decimals": 2,
+   "unit": "Pearson r",
+   "comparison": "ion mobility vs GGE",
+   "population": "Analytic sample",
+   "time_horizon": null,
+   "provenance": "reported",
+   "source_location": {
+    "section": "Results",
+    "element": "paragraph on between-method correlations",
+    "quote": "the ion mobility measurement correlated significantly with those obtained by GGE (baseline/onstudy: r=0.85/r=0.88)"
+   }
+  },
+  {
+   "id": "r-ldl-diameter-im-nmr-baseline",
+   "statement": "Correlation of ion-mobility with NMR LDL diameter at baseline.",
+   "kind": "descriptive",
+   "measure": "correlation",
+   "scale": "descriptive",
+   "value": 0.74,
+   "decimals": 2,
+   "unit": "Pearson r",
+   "comparison": "ion mobility vs NMR",
+   "population": "Analytic sample",
+   "time_horizon": null,
+   "provenance": "reported",
+   "source_location": {
+    "section": "Results",
+    "element": "paragraph on between-method correlations",
+    "quote": "and NMR (r=0.74/r=0.63)"
+   }
+  }
+ ],
+ "findings_summary": "Four subfraction methods each linked small, dense LDL with faster coronary stenosis progression, but they rest on different measurement principles, agree only moderately with one another (for example ion mobility vs NMR LDL diameter r = 0.74 at baseline), and between-method correlations for LDL subfractions weakened for smaller particles. The authors conclude that results should be standardised across methods.",
+ "limitations": [
+  {
+   "text": "Small sample (136 patients, 119 men) with established coronary disease and low HDL; not a primary-prevention population.",
+   "source": "identified_in_review"
+  },
+  {
+   "text": "Compares subfraction methods with each other and with disease progression; it does not report the absolute agreement of ion-mobility LDL particle number with ApoB.",
+   "source": "identified_in_review"
+  },
+  {
+   "text": "Ion mobility was measured on frozen samples in 2012 for a trial run earlier.",
+   "source": "stated_by_authors"
+  }
+ ],
+ "applicability_constraints": [
+  "Treated patients with coronary disease in a trial; associations with stenosis progression, not events.",
+  "Subclass boundaries and units differ by method; values are not interchangeable between methods."
+ ],
+ "discrepancies": [],
+ "interpretation": "Lipoprotein particle methods are not standardised: they use different principles and agree only moderately, especially for small particles. A particle concentration from one method cannot be assumed to equal what another method, or ApoB, would report.",
+ "review": {
+  "status": "source_verified",
+  "verified_by": "Automated agent (Claude), interactive session; not an independent or clinical review",
+  "verified_on": "2026-10-21",
+  "method": "Each value matched against a verbatim quote from the PMC full text, checked by evidence_tools.validate against the cached text.",
+  "independent_review": false
+ },
+ "publication": {
+  "status": "local_notebook_only"
+ }
+}

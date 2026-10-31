@@ -1,0 +1,412 @@
+{
+  "schema_version": 1,
+  "id": "zhang-2021-cumulative-ldl",
+  "short_title": "Cumulative LDL-C exposure in young adulthood and middle age (4 pooled US cohorts)",
+  "citation": {
+    "authors": [
+      "Zhang Y",
+      "Pletcher MJ",
+      "Vittinghoff E",
+      "Clemons AM",
+      "Jacobs DR",
+      "Allen NB",
+      "Alonso A",
+      "Bellows BK",
+      "Oelsner EC",
+      "Zeki Al Hazzouri A",
+      "Kazi DS",
+      "de Ferranti SD",
+      "Moran AE"
+    ],
+    "title": "Association Between Cumulative Low-Density Lipoprotein Cholesterol Exposure During Young Adulthood and Middle Age and Risk of Cardiovascular Events",
+    "journal": "JAMA Cardiology",
+    "year": 2021,
+    "volume": "6",
+    "issue": "12",
+    "pages": "1406-1413",
+    "doi": "10.1001/jamacardio.2021.3508",
+    "pmid": "34550307",
+    "pmcid": "PMC8459309",
+    "url": "https://doi.org/10.1001/jamacardio.2021.3508"
+  },
+  "access": {
+    "full_text_reviewed": true,
+    "full_text_source": "PubMed Central article page (PMC8459309), converted to text; figure images not inspected",
+    "license": null,
+    "supplement_reviewed": false,
+    "retrieved_on": "2026-10-21",
+    "abstract_only_note": null
+  },
+  "study": {
+    "design": "pooled_prospective_cohorts",
+    "design_detail": "Pooled data from ARIC, CARDIA, Framingham Offspring and MESA. LDL-C trajectories from age 18 were modelled with multiple imputation (30 imputed data sets); cumulative LDL-C (area under the trajectory, mg/dL × years), time-weighted average (TWA) LDL-C and LDL-C slope were computed up to the index visit (last visit aged 40-60 with measured LDL-C). Cox models with age as time scale, stratified by cohort; quartile comparisons and splines.",
+    "evidence_type": "observational_association",
+    "population": "Participants of 4 US cohorts with 2 or more LDL-C measures at least 2 years apart between ages 18 and 60, at least one at ages 40-60, without CVD before the index visit; mean age 56.4 years at index visit, 56.4% women, 71.0% non-Hispanic White",
+    "setting": "United States; data collected 1971-2017",
+    "sample_size": 18288,
+    "exposure_or_intervention": "Cumulative LDL-C, TWA LDL-C and LDL-C slope from age 18 to the index visit (partly imputed)",
+    "comparator": "Top vs bottom quartile of each LDL-C variable; models with and without adjustment for LDL-C at the index visit",
+    "outcomes": [
+      "Incident coronary heart disease (myocardial infarction or CHD death)",
+      "Ischemic stroke",
+      "Heart failure"
+    ],
+    "follow_up": "Median 16 years after the index visit"
+  },
+  "claims": [
+    {
+      "id": "n-participants",
+      "statement": "Participants included.",
+      "kind": "descriptive",
+      "measure": "count",
+      "scale": "descriptive",
+      "value": 18288,
+      "decimals": 0,
+      "unit": "participants",
+      "comparison": "none",
+      "population": "Pooled analytic sample",
+      "time_horizon": null,
+      "provenance": "reported",
+      "source_location": {
+        "section": "Abstract",
+        "element": "Results paragraph",
+        "quote": "A total of 18 288 participants were included in this study."
+      }
+    },
+    {
+      "id": "n-chd-events",
+      "statement": "Incident CHD events during follow-up.",
+      "kind": "descriptive",
+      "measure": "count",
+      "scale": "descriptive",
+      "value": 1165,
+      "decimals": 0,
+      "unit": "events",
+      "comparison": "none",
+      "population": "Pooled analytic sample",
+      "time_horizon": "median 16 years",
+      "provenance": "reported",
+      "source_location": {
+        "section": "Abstract",
+        "element": "Results paragraph",
+        "quote": "During a median follow-up of 16 years, 1165 CHD, 599 ischemic stroke, and 1145 HF events occurred."
+      }
+    },
+    {
+      "id": "r-index-vs-cumulative",
+      "statement": "Correlation between LDL-C at the index visit and the long-term LDL-C variables (cumulative, TWA, slope).",
+      "kind": "descriptive",
+      "measure": "range",
+      "scale": "descriptive",
+      "value": null,
+      "lower": 0.6,
+      "upper": 0.7,
+      "decimals": 1,
+      "unit": "Pearson r",
+      "interval": "range of Pearson r across the three variables",
+      "comparison": "single midlife LDL-C vs long-term LDL-C variables",
+      "population": "Pooled analytic sample",
+      "time_horizon": null,
+      "provenance": "reported",
+      "source_location": {
+        "section": "Results",
+        "element": "first paragraph (eTable 2)",
+        "quote": "Moderate correlations were found between LDL-C levels at the index visit and cumulative LDL-C level, TWA LDL-C level, and LDL-C slope (Pearson r range, 0.6-0.7)"
+      }
+    },
+    {
+      "id": "imputations",
+      "statement": "Number of imputed data sets used for the partly unobserved LDL-C trajectories.",
+      "kind": "descriptive",
+      "measure": "count",
+      "scale": "descriptive",
+      "value": 30,
+      "decimals": 0,
+      "unit": "imputed data sets",
+      "comparison": "none",
+      "population": "Pooled analytic sample",
+      "time_horizon": null,
+      "provenance": "reported",
+      "source_location": {
+        "section": "Methods",
+        "element": "Statistical Analysis",
+        "quote": "we used multiple imputation techniques that were based on parametric bootstrap to obtain 30 imputed data sets"
+      }
+    },
+    {
+      "id": "cumulative-q1-cutoff",
+      "statement": "Upper cutoff of the bottom quartile of cumulative LDL-C (age 18 to index visit).",
+      "kind": "descriptive",
+      "measure": "cutoff",
+      "scale": "descriptive",
+      "value": 4025,
+      "decimals": 0,
+      "unit": "mg/dL × years",
+      "comparison": "bottom quartile is below this value",
+      "population": "Pooled analytic sample",
+      "time_horizon": null,
+      "provenance": "reported",
+      "source_location": {
+        "section": "Methods",
+        "element": "Statistical Analysis, quartile cutoffs",
+        "quote": "The cutoffs for quartiles were less than 4025 mg/dL × years (to convert millimoles per liter, multiply by 0.0259), 4025 to 4796 mg/dL × years, 4797 to 5603 mg/dL × years, and 5604 mg/dL × years or greater for cumulative LDL-C level;"
+      }
+    },
+    {
+      "id": "cumulative-q4-cutoff",
+      "statement": "Lower cutoff of the top quartile of cumulative LDL-C.",
+      "kind": "descriptive",
+      "measure": "cutoff",
+      "scale": "descriptive",
+      "value": 5604,
+      "decimals": 0,
+      "unit": "mg/dL × years",
+      "comparison": "top quartile is at or above this value",
+      "population": "Pooled analytic sample",
+      "time_horizon": null,
+      "provenance": "reported",
+      "source_location": {
+        "section": "Methods",
+        "element": "Statistical Analysis, quartile cutoffs",
+        "quote": "The cutoffs for quartiles were less than 4025 mg/dL × years (to convert millimoles per liter, multiply by 0.0259), 4025 to 4796 mg/dL × years, 4797 to 5603 mg/dL × years, and 5604 mg/dL × years or greater for cumulative LDL-C level;"
+      }
+    },
+    {
+      "id": "hr-cumulative-m1",
+      "statement": "CHD hazard ratio, top vs bottom quartile of cumulative LDL-C, adjusted for demographic and clinical risk factors (not for midlife LDL-C).",
+      "kind": "association",
+      "measure": "hazard_ratio",
+      "scale": "relative",
+      "value": 1.97,
+      "lower": 1.5,
+      "upper": 2.58,
+      "decimals": 2,
+      "unit": "ratio",
+      "interval": "95% CI",
+      "comparison": "top vs bottom quartile",
+      "population": "Pooled analytic sample",
+      "time_horizon": "median 16 years follow-up",
+      "provenance": "reported",
+      "source_location": {
+        "section": "Results",
+        "element": "paragraph after the Table, model adjusted for risk factors (eFigure 3)",
+        "quote": "the HRs for CHD that compared the top with bottom quartiles of the LDL-C variables were 1.97 (95% CI, 1.50-2.58; P for trend <.001) for cumulative LDL-C level"
+      }
+    },
+    {
+      "id": "hr-twa-m1",
+      "statement": "CHD hazard ratio, top vs bottom quartile of TWA LDL-C, adjusted for risk factors (not for midlife LDL-C).",
+      "kind": "association",
+      "measure": "hazard_ratio",
+      "scale": "relative",
+      "value": 1.95,
+      "lower": 1.54,
+      "upper": 2.46,
+      "decimals": 2,
+      "unit": "ratio",
+      "interval": "95% CI",
+      "comparison": "top vs bottom quartile",
+      "population": "Pooled analytic sample",
+      "time_horizon": "median 16 years follow-up",
+      "provenance": "reported",
+      "source_location": {
+        "section": "Results",
+        "element": "paragraph after the Table, model adjusted for risk factors (eFigure 3)",
+        "quote": "1.95 (95% CI, 1.54-2.46; P for trend <.001) for TWA LDL-C level"
+      }
+    },
+    {
+      "id": "hr-slope-m1",
+      "statement": "CHD hazard ratio, top vs bottom quartile of LDL-C slope, adjusted for risk factors (not for midlife LDL-C).",
+      "kind": "association",
+      "measure": "hazard_ratio",
+      "scale": "relative",
+      "value": 1.26,
+      "lower": 1.03,
+      "upper": 1.55,
+      "decimals": 2,
+      "unit": "ratio",
+      "interval": "95% CI",
+      "comparison": "top vs bottom quartile",
+      "population": "Pooled analytic sample",
+      "time_horizon": "median 16 years follow-up",
+      "provenance": "reported",
+      "source_location": {
+        "section": "Results",
+        "element": "paragraph after the Table, model adjusted for risk factors (eFigure 3)",
+        "quote": "1.26 (95% CI, 1.03-1.55; P for trend = .02) for LDL-C slope"
+      }
+    },
+    {
+      "id": "hr-index-m1",
+      "statement": "CHD hazard ratio, top vs bottom quartile of the single LDL-C measured at the index visit, adjusted for risk factors.",
+      "kind": "association",
+      "measure": "hazard_ratio",
+      "scale": "relative",
+      "value": 1.79,
+      "lower": 1.49,
+      "upper": 2.14,
+      "decimals": 2,
+      "unit": "ratio",
+      "interval": "95% CI",
+      "comparison": "top vs bottom quartile",
+      "population": "Pooled analytic sample",
+      "time_horizon": "median 16 years follow-up",
+      "provenance": "reported",
+      "source_location": {
+        "section": "Results",
+        "element": "paragraph after the Table, model adjusted for risk factors (eFigure 3)",
+        "quote": "1.79 (95% CI, 1.49-2.14; P for trend <.001) for LDL-C levels at the index visit"
+      }
+    },
+    {
+      "id": "hr-cumulative-m2",
+      "statement": "CHD hazard ratio, top vs bottom quartile of cumulative LDL-C, further adjusted for LDL-C at the index visit.",
+      "kind": "association",
+      "measure": "hazard_ratio",
+      "scale": "relative",
+      "value": 1.57,
+      "lower": 1.1,
+      "upper": 2.23,
+      "decimals": 2,
+      "unit": "ratio",
+      "interval": "95% CI",
+      "comparison": "top vs bottom quartile",
+      "population": "Pooled analytic sample",
+      "time_horizon": "median 16 years follow-up",
+      "provenance": "reported",
+      "source_location": {
+        "section": "Results",
+        "element": "same paragraph, models further adjusted for index-visit LDL-C (Figure 1)",
+        "quote": "In models that further adjusted for LDL-C levels at the index visit, the HRs for CHD that compared the top with bottom quartiles of the LDL-C variables were 1.57 (95% CI, 1.10-2.23; P for trend = .01) for cumulative LDL-C level"
+      }
+    },
+    {
+      "id": "hr-twa-m2",
+      "statement": "CHD hazard ratio, top vs bottom quartile of TWA LDL-C, further adjusted for LDL-C at the index visit.",
+      "kind": "association",
+      "measure": "hazard_ratio",
+      "scale": "relative",
+      "value": 1.69,
+      "lower": 1.23,
+      "upper": 2.31,
+      "decimals": 2,
+      "unit": "ratio",
+      "interval": "95% CI",
+      "comparison": "top vs bottom quartile",
+      "population": "Pooled analytic sample",
+      "time_horizon": "median 16 years follow-up",
+      "provenance": "reported",
+      "source_location": {
+        "section": "Results",
+        "element": "same paragraph, models further adjusted for index-visit LDL-C (Figure 1)",
+        "quote": "1.69 (95% CI, 1.23-2.31; P for trend <.001) for TWA LDL-C level"
+      }
+    },
+    {
+      "id": "hr-slope-m2",
+      "statement": "CHD hazard ratio, top vs bottom quartile of LDL-C slope, further adjusted for LDL-C at the index visit.",
+      "kind": "association",
+      "measure": "hazard_ratio",
+      "scale": "relative",
+      "value": 0.88,
+      "lower": 0.69,
+      "upper": 1.12,
+      "decimals": 2,
+      "unit": "ratio",
+      "interval": "95% CI",
+      "comparison": "top vs bottom quartile",
+      "population": "Pooled analytic sample",
+      "time_horizon": "median 16 years follow-up",
+      "provenance": "reported",
+      "source_location": {
+        "section": "Results",
+        "element": "same paragraph, models further adjusted for index-visit LDL-C (Figure 1)",
+        "quote": "0.88 (95% CI, 0.69-1.12; P for trend = .28) for LDL-C slope"
+      }
+    },
+    {
+      "id": "hr-twa-never-treated",
+      "statement": "CHD hazard ratio, top vs bottom quartile of TWA LDL-C, among participants who never used lipid-lowering medication. The adjustment model for this sensitivity analysis is not specified in the main text (eFigures 12-14 not reviewed), so it is not directly comparable with the 1.95 or 1.69 estimates.",
+      "kind": "association",
+      "measure": "hazard_ratio",
+      "scale": "relative",
+      "value": 1.54,
+      "lower": 1.08,
+      "upper": 2.18,
+      "decimals": 2,
+      "unit": "ratio",
+      "interval": "95% CI",
+      "comparison": "top vs bottom quartile",
+      "population": "15 626 participants who never used lipid-lowering medication",
+      "time_horizon": "median 16 years follow-up",
+      "provenance": "reported",
+      "source_location": {
+        "section": "Results",
+        "element": "sensitivity analysis paragraph (eFigures 12-14)",
+        "quote": "Among the 15 626 participants who never used lipid-lowering medication, TWA LDL-C level remained significantly associated with incident CHD (the HR for CHD that compared the top with bottom quartiles of TWA LDL-C was 1.54 [95% CI, 1.08-2.18])"
+      }
+    }
+  ],
+  "findings_summary": "In 18 288 adults from four US cohorts followed for a median of 16 years, higher cumulative and time-weighted average LDL-C from age 18 to midlife were associated with higher incident coronary heart disease. Comparing top with bottom quartiles, the hazard ratio for cumulative LDL-C was 1.97 when adjusted for standard risk factors and 1.57 when further adjusted for the single LDL-C measured in midlife; for time-weighted average LDL-C the corresponding values were 1.95 and 1.69. LDL-C slope was not associated with CHD after adjusting for midlife LDL-C (0.88). None of the LDL-C variables was associated with ischemic stroke or heart failure.",
+  "limitations": [
+    {
+      "text": "Early-life LDL-C was largely not observed: trajectories from age 18 were estimated by multiple imputation, so cumulative exposure is partly modelled rather than measured.",
+      "source": "stated_by_authors"
+    },
+    {
+      "text": "The authors argue imputation error was likely nondifferential and biased toward sample means, making the estimates conservative (toward the null). This argument does not address bias from the pooled trajectory model itself.",
+      "source": "stated_by_authors"
+    },
+    {
+      "text": "Possibly underpowered for ischemic stroke and for racial and ethnic minority subgroups.",
+      "source": "stated_by_authors"
+    },
+    {
+      "text": "Observational associations: they do not show that lowering LDL-C earlier changes outcomes, although they are consistent with other evidence the authors cite.",
+      "source": "identified_in_review"
+    },
+    {
+      "text": "Hazard ratios are relative comparisons of extreme quartiles; the paper's text reports no absolute CHD risks by quartile.",
+      "source": "identified_in_review"
+    },
+    {
+      "text": "Supplementary material (eFigures, eTables including event counts by quartile) and figure images were not reviewed for this record.",
+      "source": "identified_in_review"
+    }
+  ],
+  "applicability_constraints": [
+    "US cohort participants with at least two LDL-C measurements between ages 18 and 60, one at ages 40-60, and no CVD before the index visit.",
+    "Cumulative exposure is defined from age 18 to the index visit; the quartile cutoffs describe this pooled sample only.",
+    "Group-level hazard ratios over a median 16 years; not an individual's risk."
+  ],
+  "discrepancies": [
+    {
+      "description": "The Abstract reports the adjusted CHD hazard ratios (1.57, 1.69, 0.88) without stating that they compare top with bottom quartiles; the Results text states the comparison.",
+      "locations": [
+        "Abstract, Results",
+        "Results, paragraph after the Table"
+      ],
+      "handling": "Record labels them as top vs bottom quartile, per the Results text."
+    },
+    {
+      "description": "The exposure window is described as 'from age 18 to 60 years' in the Abstract but as from age 18 to the index visit (last visit aged 40-60) in the Methods.",
+      "locations": [
+        "Abstract, Exposures",
+        "Methods, 'Cumulative LDL-C, TWA LDL-C, and LDL-C Slope'"
+      ],
+      "handling": "Record uses the Methods definition (age 18 to the index visit)."
+    }
+  ],
+  "interpretation": "The study supports the idea that a single midlife LDL-C does not capture everything about past LDL-C exposure that is associated with coronary disease: long-term averages remained associated after adjusting for the midlife value. It also shows the main practical obstacle. Even large cohorts rarely measured LDL-C across young adulthood, so the exposure was partly imputed from models. For one person, historical laboratory records can document LDL-C at the dates it was actually measured. They cannot establish exposure during unmeasured years without assumptions, and those assumptions should be explicit rather than hidden in a single 'cumulative' number.",
+  "review": {
+    "status": "source_verified",
+    "verified_by": "Automated agent (Claude) during an unattended session; not an independent or clinical review",
+    "verified_on": "2026-10-21",
+    "method": "Each reported value was matched against a verbatim quote from the PMC full text, and each quote was checked against the cached full text by evidence_tools.validate. Citation metadata was checked against the PubMed record.",
+    "independent_review": false
+  },
+  "publication": {
+    "status": "local_notebook_only"
+  }
+}

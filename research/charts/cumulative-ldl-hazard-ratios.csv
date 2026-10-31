@@ -1,0 +1,8 @@
+row_id,claim_id,group,label,series,value,lower,upper,decimals,unit,provenance,source_section,source_element
+r1,hr-index-m1,Single midlife LDL-C,Midlife LDL-C,Adjusted for risk factors,1.79,1.49,2.14,2,ratio,reported,Results,"paragraph after the Table, model adjusted for risk factors (eFigure 3)"
+r2,hr-cumulative-m1,Cumulative LDL-C,Cumulative,Adjusted for risk factors,1.97,1.50,2.58,2,ratio,reported,Results,"paragraph after the Table, model adjusted for risk factors (eFigure 3)"
+r3,hr-cumulative-m2,Cumulative LDL-C,Cumulative,Also adjusted for midlife LDL-C,1.57,1.10,2.23,2,ratio,reported,Results,"same paragraph, models further adjusted for index-visit LDL-C (Figure 1)"
+r4,hr-twa-m1,Time-weighted average,TWA,Adjusted for risk factors,1.95,1.54,2.46,2,ratio,reported,Results,"paragraph after the Table, model adjusted for risk factors (eFigure 3)"
+r5,hr-twa-m2,Time-weighted average,TWA,Also adjusted for midlife LDL-C,1.69,1.23,2.31,2,ratio,reported,Results,"same paragraph, models further adjusted for index-visit LDL-C (Figure 1)"
+r6,hr-slope-m1,LDL-C slope,Slope,Adjusted for risk factors,1.26,1.03,1.55,2,ratio,reported,Results,"paragraph after the Table, model adjusted for risk factors (eFigure 3)"
+r7,hr-slope-m2,LDL-C slope,Slope,Also adjusted for midlife LDL-C,0.88,0.69,1.12,2,ratio,reported,Results,"same paragraph, models further adjusted for index-visit LDL-C (Figure 1)"

@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "id": "bp-repeat-crossover-slopes",
+  "evidence_id": "sundstrom-2023-physic",
+  "rows": [
+    {
+      "row_id": "r1",
+      "claim_id": "slope-aml-can",
+      "group": "Aml vs Can",
+      "label": "Aml vs Can",
+      "series": "Repeat-crossover slope (95% CI)"
+    },
+    {
+      "row_id": "r2",
+      "claim_id": "slope-aml-lis",
+      "group": "Aml vs Lis",
+      "label": "Aml vs Lis",
+      "series": "Repeat-crossover slope (95% CI)"
+    },
+    {
+      "row_id": "r3",
+      "claim_id": "slope-hctz-aml",
+      "group": "HCTZ vs Aml",
+      "label": "HCTZ vs Aml",
+      "series": "Repeat-crossover slope (95% CI)"
+    },
+    {
+      "row_id": "r4",
+      "claim_id": "slope-hctz-can",
+      "group": "HCTZ vs Can",
+      "label": "HCTZ vs Can",
+      "series": "Repeat-crossover slope (95% CI)"
+    },
+    {
+      "row_id": "r5",
+      "claim_id": "slope-hctz-lis",
+      "group": "HCTZ vs Lis",
+      "label": "HCTZ vs Lis",
+      "series": "Repeat-crossover slope (95% CI)"
+    },
+    {
+      "row_id": "r6",
+      "claim_id": "slope-lis-can",
+      "group": "Lis vs Can",
+      "label": "Lis vs Can",
+      "series": "Repeat-crossover slope (95% CI)"
+    }
+  ],
+  "title": "Does a person's first comparison predict their repeat?",
+  "chart_type": "interval_points",
+  "data_file": "bp-repeat-crossover-slopes.csv",
+  "x_label": "Drug pair",
+  "y_label": "Slope, second vs first difference",
+  "caption": "Among participants who completed two crossovers between the same pair, the regression slope of the second difference on the first (95% CI), from Table 2. A slope above 0 means a person's first observed difference partly repeats.",
+  "reading_note": "Small subsets (33-39 participants per pair, Table 2). This is replication within the trial, measured with blinded ambulatory monitoring; it does not mean a single unblinded home comparison would replicate.",
+  "reference_line": {
+    "value": 0.0,
+    "label": "0 = first difference does not predict the repeat"
+  }
+}

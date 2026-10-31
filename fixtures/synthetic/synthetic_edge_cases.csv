@@ -1,0 +1,8 @@
+Analyte,Result,Units,Collected,Specimen,Reference Interval
+Triglycerides,131,,2024-06-03,Serum,<150
+HDL Cholesterol,50,mg/dL,04/06/2024,Serum,>39
+Total Cholesterol,199,mg/dL,06/04/24,,<200
+Apolipoprotein B,See note,mg/dL,2024-06-03,Serum,<90
+Analyte X-17,4.2,U/L,2024-06-03,Serum,1-10
+Glucose,92,mg/dL,,Plasma,65-99
+Lipoprotein (a),41,mg/dL,2024-06-03,Specimen B,

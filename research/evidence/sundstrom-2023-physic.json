@@ -1,0 +1,734 @@
+{
+  "schema_version": 1,
+  "id": "sundstrom-2023-physic",
+  "short_title": "Heterogeneity in blood-pressure response to 4 drugs (PHYSIC repeated crossover trial)",
+  "citation": {
+    "authors": [
+      "Sundström J",
+      "Lind L",
+      "Nowrouzi S",
+      "Hagström E",
+      "Held C",
+      "Lytsy P",
+      "Neal B",
+      "Marttala K",
+      "Östlund O"
+    ],
+    "title": "Heterogeneity in Blood Pressure Response to 4 Antihypertensive Drugs: A Randomized Clinical Trial",
+    "journal": "JAMA",
+    "year": 2023,
+    "volume": "329",
+    "issue": "14",
+    "pages": "1160-1169",
+    "doi": "10.1001/jama.2023.3322",
+    "pmid": "37039792",
+    "pmcid": "PMC10091169",
+    "url": "https://doi.org/10.1001/jama.2023.3322"
+  },
+  "access": {
+    "full_text_reviewed": true,
+    "full_text_source": "PubMed Central article page (PMC10091169), converted to text; figure images not inspected",
+    "license": null,
+    "supplement_reviewed": false,
+    "retrieved_on": "2026-10-21",
+    "abstract_only_note": null
+  },
+  "study": {
+    "design": "randomized_repeated_crossover_trial",
+    "design_detail": "Randomized, double-blind, repeated crossover trial (PHYSIC, NCT02774460). After a 2-week placebo run-in, each participant had 6 treatment periods in random order: one each of lisinopril 20 mg, candesartan 16 mg, hydrochlorothiazide 25 mg and amlodipine 10 mg, plus repeats of 2 randomly chosen drugs. Periods of 7-9 weeks (half dose weeks 1-2) separated by 1-week placebo washouts. Mixed-effects models estimated average contrasts and between-person variation in contrasts; repeated crossovers tested whether a person's response replicated.",
+    "evidence_type": "randomized_comparison",
+    "population": "Men and women aged 40-75 with grade 1 hypertension at low cardiovascular risk, untreated or on monotherapy that could be stopped; office SBP 140-179 mm Hg at randomization; exclusions included diabetes, cardiovascular disease and kidney failure. 54% men, mean age 64",
+    "setting": "Single outpatient research clinic, Uppsala University Hospital, Sweden; screening 2017-2020, last visit June 2021",
+    "sample_size": 280,
+    "exposure_or_intervention": "Lisinopril, candesartan, hydrochlorothiazide and amlodipine monotherapy at fixed doses",
+    "comparator": "Each of the other three drugs (all 6 pairwise contrasts), within the same participant",
+    "outcomes": [
+      "Daytime (10:00-20:00) ambulatory systolic blood pressure at the end of each treatment period"
+    ],
+    "follow_up": "About a year per participant: 6 treatment periods (median 56 days) with washouts"
+  },
+  "claims": [
+    {
+      "id": "n-randomized",
+      "statement": "Participants randomized.",
+      "kind": "descriptive",
+      "measure": "count",
+      "scale": "descriptive",
+      "value": 280,
+      "decimals": 0,
+      "unit": "participants",
+      "comparison": "none",
+      "population": "PHYSIC trial",
+      "time_horizon": null,
+      "provenance": "reported",
+      "source_location": {
+        "section": "Results",
+        "element": "first paragraph",
+        "quote": "280 participants were eventually randomized to a total of 1680 scheduled treatment periods."
+      }
+    },
+    {
+      "id": "n-periods",
+      "statement": "Completed treatment periods in the primary analysis.",
+      "kind": "descriptive",
+      "measure": "count",
+      "scale": "descriptive",
+      "value": 1468,
+      "decimals": 0,
+      "unit": "treatment periods",
+      "comparison": "none",
+      "population": "270 analysed participants",
+      "time_horizon": "median period length 56 days",
+      "provenance": "reported",
+      "source_location": {
+        "section": "Abstract",
+        "element": "Results paragraph",
+        "quote": "There were 1468 completed treatment periods (median length, 56 days) recorded in 270 of the 280 randomized participants (54% men; mean age, 64 years)."
+      }
+    },
+    {
+      "id": "meandiff-aml-can",
+      "statement": "Average difference in daytime ambulatory SBP, Amlodipine minus candesartan, assuming the same contrast for everyone.",
+      "kind": "randomized_effect",
+      "measure": "mean_difference",
+      "scale": "absolute",
+      "value": -0.8,
+      "lower": -1.9,
+      "upper": 0.4,
+      "decimals": 1,
+      "unit": "mm Hg",
+      "interval": "95% CI",
+      "comparison": "Amlodipine minus candesartan (negative = lower SBP on amlodipine)",
+      "population": "PHYSIC primary analysis set",
+      "time_horizon": "end of 7-9 week treatment periods",
+      "provenance": "reported",
+      "source_location": {
+        "section": "Table 2",
+        "element": "row 'Amlodipine-candesartan' (cells joined with ' | ')",
+        "quote": "Amlodipine-candesartan | 737 Periods in 263 participants | 130.9 (8.6) | 131.8 (12.8) | –1.2 (12.3) | −0.8 (−1.9 to 0.4) | .18 | 8.6 (7.1 to 10.3) | <.001 | –0.7 (11.6) | 0.40 (0.18 to 0.62)"
+      }
+    },
+    {
+      "id": "sd-aml-can",
+      "statement": "Estimated between-person SD of the amlodipine vs candesartan difference (how much the contrast varies from person to person).",
+      "kind": "model_estimate",
+      "measure": "sd",
+      "scale": "absolute",
+      "value": 8.6,
+      "lower": 7.1,
+      "upper": 10.3,
+      "decimals": 1,
+      "unit": "mm Hg",
+      "interval": "95% CI",
+      "comparison": "variation of the personal treatment contrast between participants",
+      "population": "PHYSIC primary analysis set",
+      "time_horizon": "end of 7-9 week treatment periods",
+      "provenance": "reported",
+      "source_location": {
+        "section": "Table 2",
+        "element": "row 'Amlodipine-candesartan' (cells joined with ' | ')",
+        "quote": "Amlodipine-candesartan | 737 Periods in 263 participants | 130.9 (8.6) | 131.8 (12.8) | –1.2 (12.3) | −0.8 (−1.9 to 0.4) | .18 | 8.6 (7.1 to 10.3) | <.001 | –0.7 (11.6) | 0.40 (0.18 to 0.62)"
+      }
+    },
+    {
+      "id": "slope-aml-can",
+      "statement": "Regression slope of the second crossover difference on the first, amlodipine vs candesartan: how far a person's first observed contrast predicts their repeat.",
+      "kind": "descriptive",
+      "measure": "regression_slope",
+      "scale": "descriptive",
+      "value": 0.4,
+      "lower": 0.18,
+      "upper": 0.62,
+      "decimals": 2,
+      "unit": "mm Hg per mm Hg",
+      "interval": "95% CI",
+      "comparison": "second vs first crossover difference within the same participant",
+      "population": "participants with two crossovers for this pair",
+      "time_horizon": null,
+      "provenance": "reported",
+      "source_location": {
+        "section": "Table 2",
+        "element": "row 'Amlodipine-candesartan' (cells joined with ' | ')",
+        "quote": "Amlodipine-candesartan | 737 Periods in 263 participants | 130.9 (8.6) | 131.8 (12.8) | –1.2 (12.3) | −0.8 (−1.9 to 0.4) | .18 | 8.6 (7.1 to 10.3) | <.001 | –0.7 (11.6) | 0.40 (0.18 to 0.62)"
+      }
+    },
+    {
+      "id": "gain-aml-can",
+      "statement": "Theoretical maximum mean SBP gain from choosing the better of amlodipine and candesartan per person, as a theoretical maximum assuming equipotent doses and perfect identification of each person's contrast (our calculation).",
+      "kind": "model_estimate",
+      "measure": "mean_gain",
+      "scale": "absolute",
+      "value": 3.43,
+      "lower": 2.83,
+      "upper": 4.11,
+      "decimals": 2,
+      "unit": "mm Hg",
+      "interval": "95% CI bounds of the between-person SD passed through the same formula (our calculation)",
+      "comparison": "optimal personal choice vs either fixed choice, equipotent doses assumed",
+      "population": "PHYSIC primary analysis set",
+      "time_horizon": null,
+      "provenance": "derived",
+      "derivation": {
+        "method": "divide_by_sqrt_2pi",
+        "inputs": [
+          "sd-aml-can"
+        ],
+        "explanation": "Our calculation: between-person SD 8.6 mm Hg divided by the square root of 2π, the formula stated in the Methods. The authors' own pairwise values are in eTable 6, which was not reviewed."
+      }
+    },
+    {
+      "id": "meandiff-aml-lis",
+      "statement": "Average difference in daytime ambulatory SBP, Amlodipine minus lisinopril, assuming the same contrast for everyone.",
+      "kind": "randomized_effect",
+      "measure": "mean_difference",
+      "scale": "absolute",
+      "value": 1.4,
+      "lower": 0.2,
+      "upper": 2.5,
+      "decimals": 1,
+      "unit": "mm Hg",
+      "interval": "95% CI",
+      "comparison": "Amlodipine minus lisinopril (negative = lower SBP on amlodipine)",
+      "population": "PHYSIC primary analysis set",
+      "time_horizon": "end of 7-9 week treatment periods",
+      "provenance": "reported",
+      "source_location": {
+        "section": "Table 2",
+        "element": "row 'Amlodipine-lisinopril' (cells joined with ' | ')",
+        "quote": "Amlodipine-lisinopril | 722 Periods in 262 participants | 130.9 (8.6) | 129.7 (12.7) | 0.9 (12.3) | 1.4 (0.2 to 2.5) | .02 | 8.9 (7.5 to 10.6) | <.001 | –0.09 (11.6) | 0.71 (0.36 to 1.05)"
+      }
+    },
+    {
+      "id": "sd-aml-lis",
+      "statement": "Estimated between-person SD of the amlodipine vs lisinopril difference (how much the contrast varies from person to person).",
+      "kind": "model_estimate",
+      "measure": "sd",
+      "scale": "absolute",
+      "value": 8.9,
+      "lower": 7.5,
+      "upper": 10.6,
+      "decimals": 1,
+      "unit": "mm Hg",
+      "interval": "95% CI",
+      "comparison": "variation of the personal treatment contrast between participants",
+      "population": "PHYSIC primary analysis set",
+      "time_horizon": "end of 7-9 week treatment periods",
+      "provenance": "reported",
+      "source_location": {
+        "section": "Table 2",
+        "element": "row 'Amlodipine-lisinopril' (cells joined with ' | ')",
+        "quote": "Amlodipine-lisinopril | 722 Periods in 262 participants | 130.9 (8.6) | 129.7 (12.7) | 0.9 (12.3) | 1.4 (0.2 to 2.5) | .02 | 8.9 (7.5 to 10.6) | <.001 | –0.09 (11.6) | 0.71 (0.36 to 1.05)"
+      }
+    },
+    {
+      "id": "slope-aml-lis",
+      "statement": "Regression slope of the second crossover difference on the first, amlodipine vs lisinopril: how far a person's first observed contrast predicts their repeat.",
+      "kind": "descriptive",
+      "measure": "regression_slope",
+      "scale": "descriptive",
+      "value": 0.71,
+      "lower": 0.36,
+      "upper": 1.05,
+      "decimals": 2,
+      "unit": "mm Hg per mm Hg",
+      "interval": "95% CI",
+      "comparison": "second vs first crossover difference within the same participant",
+      "population": "participants with two crossovers for this pair",
+      "time_horizon": null,
+      "provenance": "reported",
+      "source_location": {
+        "section": "Table 2",
+        "element": "row 'Amlodipine-lisinopril' (cells joined with ' | ')",
+        "quote": "Amlodipine-lisinopril | 722 Periods in 262 participants | 130.9 (8.6) | 129.7 (12.7) | 0.9 (12.3) | 1.4 (0.2 to 2.5) | .02 | 8.9 (7.5 to 10.6) | <.001 | –0.09 (11.6) | 0.71 (0.36 to 1.05)"
+      }
+    },
+    {
+      "id": "gain-aml-lis",
+      "statement": "Theoretical maximum mean SBP gain from choosing the better of amlodipine and lisinopril per person, as a theoretical maximum assuming equipotent doses and perfect identification of each person's contrast (our calculation).",
+      "kind": "model_estimate",
+      "measure": "mean_gain",
+      "scale": "absolute",
+      "value": 3.55,
+      "lower": 2.99,
+      "upper": 4.23,
+      "decimals": 2,
+      "unit": "mm Hg",
+      "interval": "95% CI bounds of the between-person SD passed through the same formula (our calculation)",
+      "comparison": "optimal personal choice vs either fixed choice, equipotent doses assumed",
+      "population": "PHYSIC primary analysis set",
+      "time_horizon": null,
+      "provenance": "derived",
+      "derivation": {
+        "method": "divide_by_sqrt_2pi",
+        "inputs": [
+          "sd-aml-lis"
+        ],
+        "explanation": "Our calculation: between-person SD 8.9 mm Hg divided by the square root of 2π, the formula stated in the Methods. The authors' own pairwise values are in eTable 6, which was not reviewed."
+      }
+    },
+    {
+      "id": "meandiff-hctz-aml",
+      "statement": "Average difference in daytime ambulatory SBP, Hydrochlorothiazide minus amlodipine, assuming the same contrast for everyone.",
+      "kind": "randomized_effect",
+      "measure": "mean_difference",
+      "scale": "absolute",
+      "value": 5.1,
+      "lower": 3.9,
+      "upper": 6.2,
+      "decimals": 1,
+      "unit": "mm Hg",
+      "interval": "95% CI",
+      "comparison": "Hydrochlorothiazide minus amlodipine (negative = lower SBP on hydrochlorothiazide)",
+      "population": "PHYSIC primary analysis set",
+      "time_horizon": "end of 7-9 week treatment periods",
+      "provenance": "reported",
+      "source_location": {
+        "section": "Table 2",
+        "element": "row 'Hydrochlorothiazide-amlodipine' (cells joined with ' | ')",
+        "quote": "Hydrochlorothiazide-amlodipine | 731 Periods in 266 participants | 136.1 (10.3) | 130.9 (8.6) | 5.6 (8.3) | 5.1 (3.9 to 6.2) | <.001 | 2.4 (1.1 to 3.9) | <.001 | –0.4 (10.8) | 0.33 (−0.07 to 0.73)"
+      }
+    },
+    {
+      "id": "sd-hctz-aml",
+      "statement": "Estimated between-person SD of the hydrochlorothiazide vs amlodipine difference (how much the contrast varies from person to person).",
+      "kind": "model_estimate",
+      "measure": "sd",
+      "scale": "absolute",
+      "value": 2.4,
+      "lower": 1.1,
+      "upper": 3.9,
+      "decimals": 1,
+      "unit": "mm Hg",
+      "interval": "95% CI",
+      "comparison": "variation of the personal treatment contrast between participants",
+      "population": "PHYSIC primary analysis set",
+      "time_horizon": "end of 7-9 week treatment periods",
+      "provenance": "reported",
+      "source_location": {
+        "section": "Table 2",
+        "element": "row 'Hydrochlorothiazide-amlodipine' (cells joined with ' | ')",
+        "quote": "Hydrochlorothiazide-amlodipine | 731 Periods in 266 participants | 136.1 (10.3) | 130.9 (8.6) | 5.6 (8.3) | 5.1 (3.9 to 6.2) | <.001 | 2.4 (1.1 to 3.9) | <.001 | –0.4 (10.8) | 0.33 (−0.07 to 0.73)"
+      }
+    },
+    {
+      "id": "slope-hctz-aml",
+      "statement": "Regression slope of the second crossover difference on the first, hydrochlorothiazide vs amlodipine: how far a person's first observed contrast predicts their repeat.",
+      "kind": "descriptive",
+      "measure": "regression_slope",
+      "scale": "descriptive",
+      "value": 0.33,
+      "lower": -0.07,
+      "upper": 0.73,
+      "decimals": 2,
+      "unit": "mm Hg per mm Hg",
+      "interval": "95% CI",
+      "comparison": "second vs first crossover difference within the same participant",
+      "population": "participants with two crossovers for this pair",
+      "time_horizon": null,
+      "provenance": "reported",
+      "source_location": {
+        "section": "Table 2",
+        "element": "row 'Hydrochlorothiazide-amlodipine' (cells joined with ' | ')",
+        "quote": "Hydrochlorothiazide-amlodipine | 731 Periods in 266 participants | 136.1 (10.3) | 130.9 (8.6) | 5.6 (8.3) | 5.1 (3.9 to 6.2) | <.001 | 2.4 (1.1 to 3.9) | <.001 | –0.4 (10.8) | 0.33 (−0.07 to 0.73)"
+      }
+    },
+    {
+      "id": "gain-hctz-aml",
+      "statement": "Theoretical maximum mean SBP gain from choosing the better of hydrochlorothiazide and amlodipine per person, as a theoretical maximum assuming equipotent doses and perfect identification of each person's contrast (our calculation).",
+      "kind": "model_estimate",
+      "measure": "mean_gain",
+      "scale": "absolute",
+      "value": 0.96,
+      "lower": 0.44,
+      "upper": 1.56,
+      "decimals": 2,
+      "unit": "mm Hg",
+      "interval": "95% CI bounds of the between-person SD passed through the same formula (our calculation)",
+      "comparison": "optimal personal choice vs either fixed choice, equipotent doses assumed",
+      "population": "PHYSIC primary analysis set",
+      "time_horizon": null,
+      "provenance": "derived",
+      "derivation": {
+        "method": "divide_by_sqrt_2pi",
+        "inputs": [
+          "sd-hctz-aml"
+        ],
+        "explanation": "Our calculation: between-person SD 2.4 mm Hg divided by the square root of 2π, the formula stated in the Methods. The authors' own pairwise values are in eTable 6, which was not reviewed."
+      }
+    },
+    {
+      "id": "meandiff-hctz-can",
+      "statement": "Average difference in daytime ambulatory SBP, Hydrochlorothiazide minus candesartan, assuming the same contrast for everyone.",
+      "kind": "randomized_effect",
+      "measure": "mean_difference",
+      "scale": "absolute",
+      "value": 4.3,
+      "lower": 3.2,
+      "upper": 5.4,
+      "decimals": 1,
+      "unit": "mm Hg",
+      "interval": "95% CI",
+      "comparison": "Hydrochlorothiazide minus candesartan (negative = lower SBP on hydrochlorothiazide)",
+      "population": "PHYSIC primary analysis set",
+      "time_horizon": "end of 7-9 week treatment periods",
+      "provenance": "reported",
+      "source_location": {
+        "section": "Table 2",
+        "element": "row 'Hydrochlorothiazide-candesartan' (cells joined with ' | ')",
+        "quote": "Hydrochlorothiazide-candesartan | 746 Periods in 265 participants | 136.1 (10.3) | 131.8 (12.8) | 4.4 (12.0) | 4.3 (3.2 to 5.4) | <.001 | 7.2 (5.9 to 8.8) | <.001 | –0.08 (10.8) | 0.44 (0.05 to 0.82)"
+      }
+    },
+    {
+      "id": "sd-hctz-can",
+      "statement": "Estimated between-person SD of the hydrochlorothiazide vs candesartan difference (how much the contrast varies from person to person).",
+      "kind": "model_estimate",
+      "measure": "sd",
+      "scale": "absolute",
+      "value": 7.2,
+      "lower": 5.9,
+      "upper": 8.8,
+      "decimals": 1,
+      "unit": "mm Hg",
+      "interval": "95% CI",
+      "comparison": "variation of the personal treatment contrast between participants",
+      "population": "PHYSIC primary analysis set",
+      "time_horizon": "end of 7-9 week treatment periods",
+      "provenance": "reported",
+      "source_location": {
+        "section": "Table 2",
+        "element": "row 'Hydrochlorothiazide-candesartan' (cells joined with ' | ')",
+        "quote": "Hydrochlorothiazide-candesartan | 746 Periods in 265 participants | 136.1 (10.3) | 131.8 (12.8) | 4.4 (12.0) | 4.3 (3.2 to 5.4) | <.001 | 7.2 (5.9 to 8.8) | <.001 | –0.08 (10.8) | 0.44 (0.05 to 0.82)"
+      }
+    },
+    {
+      "id": "slope-hctz-can",
+      "statement": "Regression slope of the second crossover difference on the first, hydrochlorothiazide vs candesartan: how far a person's first observed contrast predicts their repeat.",
+      "kind": "descriptive",
+      "measure": "regression_slope",
+      "scale": "descriptive",
+      "value": 0.44,
+      "lower": 0.05,
+      "upper": 0.82,
+      "decimals": 2,
+      "unit": "mm Hg per mm Hg",
+      "interval": "95% CI",
+      "comparison": "second vs first crossover difference within the same participant",
+      "population": "participants with two crossovers for this pair",
+      "time_horizon": null,
+      "provenance": "reported",
+      "source_location": {
+        "section": "Table 2",
+        "element": "row 'Hydrochlorothiazide-candesartan' (cells joined with ' | ')",
+        "quote": "Hydrochlorothiazide-candesartan | 746 Periods in 265 participants | 136.1 (10.3) | 131.8 (12.8) | 4.4 (12.0) | 4.3 (3.2 to 5.4) | <.001 | 7.2 (5.9 to 8.8) | <.001 | –0.08 (10.8) | 0.44 (0.05 to 0.82)"
+      }
+    },
+    {
+      "id": "gain-hctz-can",
+      "statement": "Theoretical maximum mean SBP gain from choosing the better of hydrochlorothiazide and candesartan per person, as a theoretical maximum assuming equipotent doses and perfect identification of each person's contrast (our calculation).",
+      "kind": "model_estimate",
+      "measure": "mean_gain",
+      "scale": "absolute",
+      "value": 2.87,
+      "lower": 2.35,
+      "upper": 3.51,
+      "decimals": 2,
+      "unit": "mm Hg",
+      "interval": "95% CI bounds of the between-person SD passed through the same formula (our calculation)",
+      "comparison": "optimal personal choice vs either fixed choice, equipotent doses assumed",
+      "population": "PHYSIC primary analysis set",
+      "time_horizon": null,
+      "provenance": "derived",
+      "derivation": {
+        "method": "divide_by_sqrt_2pi",
+        "inputs": [
+          "sd-hctz-can"
+        ],
+        "explanation": "Our calculation: between-person SD 7.2 mm Hg divided by the square root of 2π, the formula stated in the Methods. The authors' own pairwise values are in eTable 6, which was not reviewed."
+      }
+    },
+    {
+      "id": "meandiff-hctz-lis",
+      "statement": "Average difference in daytime ambulatory SBP, Hydrochlorothiazide minus lisinopril, assuming the same contrast for everyone.",
+      "kind": "randomized_effect",
+      "measure": "mean_difference",
+      "scale": "absolute",
+      "value": 6.4,
+      "lower": 5.3,
+      "upper": 7.6,
+      "decimals": 1,
+      "unit": "mm Hg",
+      "interval": "95% CI",
+      "comparison": "Hydrochlorothiazide minus lisinopril (negative = lower SBP on hydrochlorothiazide)",
+      "population": "PHYSIC primary analysis set",
+      "time_horizon": "end of 7-9 week treatment periods",
+      "provenance": "reported",
+      "source_location": {
+        "section": "Table 2",
+        "element": "row 'Hydrochlorothiazide-lisinopril' (cells joined with ' | ')",
+        "quote": "Hydrochlorothiazide-lisinopril | 731 Periods in 264 participants | 136.1 (10.3) | 129.7 (12.7) | 6.6 (11.6) | 6.4 (5.3 to 7.6) | <.001 | 7.9 (6.3 to 9.5) | <.001 | –1.0 (10.6) | 0.40 (0.19 to 0.60)"
+      }
+    },
+    {
+      "id": "sd-hctz-lis",
+      "statement": "Estimated between-person SD of the hydrochlorothiazide vs lisinopril difference (how much the contrast varies from person to person).",
+      "kind": "model_estimate",
+      "measure": "sd",
+      "scale": "absolute",
+      "value": 7.9,
+      "lower": 6.3,
+      "upper": 9.5,
+      "decimals": 1,
+      "unit": "mm Hg",
+      "interval": "95% CI",
+      "comparison": "variation of the personal treatment contrast between participants",
+      "population": "PHYSIC primary analysis set",
+      "time_horizon": "end of 7-9 week treatment periods",
+      "provenance": "reported",
+      "source_location": {
+        "section": "Table 2",
+        "element": "row 'Hydrochlorothiazide-lisinopril' (cells joined with ' | ')",
+        "quote": "Hydrochlorothiazide-lisinopril | 731 Periods in 264 participants | 136.1 (10.3) | 129.7 (12.7) | 6.6 (11.6) | 6.4 (5.3 to 7.6) | <.001 | 7.9 (6.3 to 9.5) | <.001 | –1.0 (10.6) | 0.40 (0.19 to 0.60)"
+      }
+    },
+    {
+      "id": "slope-hctz-lis",
+      "statement": "Regression slope of the second crossover difference on the first, hydrochlorothiazide vs lisinopril: how far a person's first observed contrast predicts their repeat.",
+      "kind": "descriptive",
+      "measure": "regression_slope",
+      "scale": "descriptive",
+      "value": 0.4,
+      "lower": 0.19,
+      "upper": 0.6,
+      "decimals": 2,
+      "unit": "mm Hg per mm Hg",
+      "interval": "95% CI",
+      "comparison": "second vs first crossover difference within the same participant",
+      "population": "participants with two crossovers for this pair",
+      "time_horizon": null,
+      "provenance": "reported",
+      "source_location": {
+        "section": "Table 2",
+        "element": "row 'Hydrochlorothiazide-lisinopril' (cells joined with ' | ')",
+        "quote": "Hydrochlorothiazide-lisinopril | 731 Periods in 264 participants | 136.1 (10.3) | 129.7 (12.7) | 6.6 (11.6) | 6.4 (5.3 to 7.6) | <.001 | 7.9 (6.3 to 9.5) | <.001 | –1.0 (10.6) | 0.40 (0.19 to 0.60)"
+      }
+    },
+    {
+      "id": "gain-hctz-lis",
+      "statement": "Theoretical maximum mean SBP gain from choosing the better of hydrochlorothiazide and lisinopril per person, as a theoretical maximum assuming equipotent doses and perfect identification of each person's contrast (our calculation).",
+      "kind": "model_estimate",
+      "measure": "mean_gain",
+      "scale": "absolute",
+      "value": 3.15,
+      "lower": 2.51,
+      "upper": 3.79,
+      "decimals": 2,
+      "unit": "mm Hg",
+      "interval": "95% CI bounds of the between-person SD passed through the same formula (our calculation)",
+      "comparison": "optimal personal choice vs either fixed choice, equipotent doses assumed",
+      "population": "PHYSIC primary analysis set",
+      "time_horizon": null,
+      "provenance": "derived",
+      "derivation": {
+        "method": "divide_by_sqrt_2pi",
+        "inputs": [
+          "sd-hctz-lis"
+        ],
+        "explanation": "Our calculation: between-person SD 7.9 mm Hg divided by the square root of 2π, the formula stated in the Methods. The authors' own pairwise values are in eTable 6, which was not reviewed."
+      }
+    },
+    {
+      "id": "meandiff-lis-can",
+      "statement": "Average difference in daytime ambulatory SBP, Lisinopril minus candesartan, assuming the same contrast for everyone.",
+      "kind": "randomized_effect",
+      "measure": "mean_difference",
+      "scale": "absolute",
+      "value": -2.1,
+      "lower": -3.3,
+      "upper": -1.0,
+      "decimals": 1,
+      "unit": "mm Hg",
+      "interval": "95% CI",
+      "comparison": "Lisinopril minus candesartan (negative = lower SBP on lisinopril)",
+      "population": "PHYSIC primary analysis set",
+      "time_horizon": "end of 7-9 week treatment periods",
+      "provenance": "reported",
+      "source_location": {
+        "section": "Table 2",
+        "element": "row 'Lisinopril-candesartan' (cells joined with ' | ')",
+        "quote": "Lisinopril-candesartan | 737 Periods in 262 participants | 129.7 (12.7) | 131.8 (12.8) | –2.0 (9.6) | −2.1 (−3.3 to –1.0) | <.001 | 3.6 (0.0 to 5.4) | .15 | –2.1 (14.0) | 0.11 (−0.18 to 0.40)"
+      }
+    },
+    {
+      "id": "sd-lis-can",
+      "statement": "Estimated between-person SD of the lisinopril vs candesartan difference (how much the contrast varies from person to person).",
+      "kind": "model_estimate",
+      "measure": "sd",
+      "scale": "absolute",
+      "value": 3.6,
+      "lower": 0.0,
+      "upper": 5.4,
+      "decimals": 1,
+      "unit": "mm Hg",
+      "interval": "95% CI",
+      "comparison": "variation of the personal treatment contrast between participants",
+      "population": "PHYSIC primary analysis set",
+      "time_horizon": "end of 7-9 week treatment periods",
+      "provenance": "reported",
+      "source_location": {
+        "section": "Table 2",
+        "element": "row 'Lisinopril-candesartan' (cells joined with ' | ')",
+        "quote": "Lisinopril-candesartan | 737 Periods in 262 participants | 129.7 (12.7) | 131.8 (12.8) | –2.0 (9.6) | −2.1 (−3.3 to –1.0) | <.001 | 3.6 (0.0 to 5.4) | .15 | –2.1 (14.0) | 0.11 (−0.18 to 0.40)"
+      }
+    },
+    {
+      "id": "slope-lis-can",
+      "statement": "Regression slope of the second crossover difference on the first, lisinopril vs candesartan: how far a person's first observed contrast predicts their repeat.",
+      "kind": "descriptive",
+      "measure": "regression_slope",
+      "scale": "descriptive",
+      "value": 0.11,
+      "lower": -0.18,
+      "upper": 0.4,
+      "decimals": 2,
+      "unit": "mm Hg per mm Hg",
+      "interval": "95% CI",
+      "comparison": "second vs first crossover difference within the same participant",
+      "population": "participants with two crossovers for this pair",
+      "time_horizon": null,
+      "provenance": "reported",
+      "source_location": {
+        "section": "Table 2",
+        "element": "row 'Lisinopril-candesartan' (cells joined with ' | ')",
+        "quote": "Lisinopril-candesartan | 737 Periods in 262 participants | 129.7 (12.7) | 131.8 (12.8) | –2.0 (9.6) | −2.1 (−3.3 to –1.0) | <.001 | 3.6 (0.0 to 5.4) | .15 | –2.1 (14.0) | 0.11 (−0.18 to 0.40)"
+      }
+    },
+    {
+      "id": "gain-lis-can",
+      "statement": "Theoretical maximum mean SBP gain from choosing the better of lisinopril and candesartan per person, as a theoretical maximum assuming equipotent doses and perfect identification of each person's contrast (our calculation).",
+      "kind": "model_estimate",
+      "measure": "mean_gain",
+      "scale": "absolute",
+      "value": 1.44,
+      "lower": 0.0,
+      "upper": 2.15,
+      "decimals": 2,
+      "unit": "mm Hg",
+      "interval": "95% CI bounds of the between-person SD passed through the same formula (our calculation)",
+      "comparison": "optimal personal choice vs either fixed choice, equipotent doses assumed",
+      "population": "PHYSIC primary analysis set",
+      "time_horizon": null,
+      "provenance": "derived",
+      "derivation": {
+        "method": "divide_by_sqrt_2pi",
+        "inputs": [
+          "sd-lis-can"
+        ],
+        "explanation": "Our calculation: between-person SD 3.6 mm Hg divided by the square root of 2π, the formula stated in the Methods. The authors' own pairwise values are in eTable 6, which was not reviewed."
+      }
+    },
+    {
+      "id": "gain-overall",
+      "statement": "Theoretical maximum average additional SBP lowering from personalized single-drug choice vs a fixed choice, if the fitted model is true, each person's contrast were known exactly, and the treatments had been equipotent on average (eTable 6 title; the doses used were not equipotent).",
+      "kind": "model_estimate",
+      "measure": "mean_gain",
+      "scale": "absolute",
+      "value": 4.4,
+      "decimals": 1,
+      "unit": "mm Hg",
+      "comparison": "personalized choice among the 4 drugs vs a fixed choice",
+      "population": "PHYSIC trial population",
+      "time_horizon": null,
+      "provenance": "reported",
+      "source_location": {
+        "section": "Results",
+        "element": "paragraph 'Evidence of the Potential for Personalized Treatment' (eTable 6)",
+        "quote": "Assuming the fitted model to be true, personalized treatment using single-drug therapy would on average lead to a 4.4 mm Hg–lower SBP in the trial population than a fixed choice (eTable 6 in Supplement 2)"
+      }
+    },
+    {
+      "id": "gain-vs-lisinopril",
+      "statement": "Average additional SBP lowering from personalized choice vs always choosing lisinopril (on average the most effective at the doses used), including the observed average treatment differences (eTable 7), if the fitted model is true and each person's contrast were known exactly.",
+      "kind": "model_estimate",
+      "measure": "mean_gain",
+      "scale": "absolute",
+      "value": 3.1,
+      "decimals": 1,
+      "unit": "mm Hg",
+      "comparison": "personalized choice vs lisinopril for everyone",
+      "population": "PHYSIC trial population",
+      "time_horizon": null,
+      "provenance": "reported",
+      "source_location": {
+        "section": "Results",
+        "element": "paragraph 'Evidence of the Potential for Personalized Treatment' (eTable 7)",
+        "quote": "personalized treatment compared with lisinopril would still lead to a 3.1 mm Hg SBP improvement (eTable 7 in Supplement 2)"
+      }
+    }
+  ],
+  "findings_summary": "In a randomized, double-blind repeated crossover trial (280 randomized; 1468 treatment periods analysed in 270), people differed in which antihypertensive drug lowered their daytime ambulatory systolic blood pressure most. For four drug pairs the between-person SD of the treatment difference was 7.2-8.9 mm Hg, and a participant's first crossover difference predicted their repeat crossover difference. For lisinopril vs candesartan and hydrochlorothiazide vs amlodipine, large person-level differences were excluded. Compared with always using lisinopril (on average the most effective drug at the doses used), personalized single-drug choice would lower SBP by an estimated 3.1 mm Hg on average; the headline 4.4 mm Hg is a theoretical maximum against a fixed choice if the drugs had been equipotent on average. Both are model-based estimates that assume each person's response is known exactly.",
+  "limitations": [
+    {
+      "text": "Single centre, specific population (grade 1 hypertension, low risk, Swedish clinic) and four specific drugs at fixed doses; generalizability is uncertain. The authors note the run-in and single-centre design could lead to an underestimation of heterogeneity.",
+      "source": "stated_by_authors"
+    },
+    {
+      "text": "The estimand is biologic efficacy variation among adherent participants (primary analysis: periods with at least 90% adherence); effects under real-world adherence may differ.",
+      "source": "stated_by_authors"
+    },
+    {
+      "text": "The doses were not equipotent on average for some pairs.",
+      "source": "stated_by_authors"
+    },
+    {
+      "text": "Some non-adherence; monotherapy only, whereas many guidelines start with combination therapy.",
+      "source": "stated_by_authors"
+    },
+    {
+      "text": "The personalization gains assume each person's true treatment contrast is known; the repeat-crossover slopes (about 0.1-0.7) show a single observed comparison identifies it only with substantial noise.",
+      "source": "identified_in_review"
+    },
+    {
+      "text": "The 4.4 and 3.1 mm Hg gains are model-based estimates of potential benefit under the fitted model, not benefits demonstrated by assigning personalized treatment and measuring the result.",
+      "source": "identified_in_review"
+    },
+    {
+      "text": "The outcome is blood pressure, a surrogate; the trial does not measure cardiovascular events.",
+      "source": "identified_in_review"
+    },
+    {
+      "text": "The authors note the year-long identification process used in the trial is not proposed for each patient.",
+      "source": "stated_by_authors"
+    },
+    {
+      "text": "Supplement (eTables 6-10, sensitivity analyses) and figure images were not reviewed for this record.",
+      "source": "identified_in_review"
+    }
+  ],
+  "applicability_constraints": [
+    "Adults 40-75 with grade 1 hypertension at low cardiovascular risk, eligible to stop current therapy; diabetes, cardiovascular disease and kidney failure excluded.",
+    "Drug-response findings apply to these drugs and doses under trial conditions with ambulatory measurement; they say nothing about behavioural interventions.",
+    "Medication choice is outside this project's authority; the relevance here is measurement and design, not drug selection."
+  ],
+  "discrepancies": [
+    {
+      "description": "For hydrochlorothiazide vs amlodipine the between-person SD was 2.4 mm Hg (95% CI 1.1-3.9; P < .001), i.e. small heterogeneity was statistically present, while the Discussion speaks of the 'absence of a potential for benefit' for this pair; a heteroscedastic sensitivity model gave somewhat larger variation for this pair.",
+      "locations": [
+        "Table 2, row 'Hydrochlorothiazide-amlodipine'",
+        "Discussion, paragraph on strengths",
+        "Results, sensitivity analyses paragraph"
+      ],
+      "handling": "Record says large personal differences were excluded for this pair, not that heterogeneity was absent."
+    }
+  ],
+  "interpretation": "This is direct, randomized evidence that the average response can misdescribe individuals for some drug pairs, and that a person's response can replicate when measured carefully and repeatedly. It also shows what that took: ambulatory monitoring at the end of each period, washouts, blinding, and repeated periods to separate a consistent personal response from within-person noise, which the authors describe as generally larger than drug-titration effects. The estimated personalization benefit is conditional on the model and was not tested prospectively. For this project, the transferable lesson is about measurement design for any future behavioural comparison, not about medication.",
+  "review": {
+    "status": "source_verified",
+    "verified_by": "Automated agent (Claude) during an unattended session; not an independent or clinical review",
+    "verified_on": "2026-10-21",
+    "method": "Each reported value was matched against a verbatim quote from the PMC full text (Table 2 rows and Results sentences), and each quote was checked against the cached full text by evidence_tools.validate. Citation metadata was checked against the PubMed record. Derived pairwise gains use the formula stated in the Methods and are labelled as our calculations.",
+    "independent_review": false
+  },
+  "publication": {
+    "status": "local_notebook_only"
+  }
+}

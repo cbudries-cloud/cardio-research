@@ -1,0 +1,147 @@
+{
+ "schema_version": 1,
+ "id": "caulfield-2008-ion-mobility",
+ "short_title": "Ion mobility method for lipoprotein particles (method paper)",
+ "citation": {
+  "authors": [
+   "Caulfield MP",
+   "Li S",
+   "Lee G",
+   "Blanche PJ",
+   "Salameh WA",
+   "Benner WH",
+   "Reitz RE",
+   "Krauss RM"
+  ],
+  "title": "Direct determination of lipoprotein particle sizes and concentrations by ion mobility analysis",
+  "journal": "Clinical Chemistry",
+  "year": 2008,
+  "volume": "54",
+  "issue": "8",
+  "pages": "1307-1316",
+  "doi": "10.1373/clinchem.2007.100586",
+  "pmid": "18515257",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/18515257/"
+ },
+ "access": {
+  "full_text_reviewed": false,
+  "full_text_source": "PubMed abstract (efetch)",
+  "license": null,
+  "supplement_reviewed": false,
+  "retrieved_on": "2026-10-21",
+  "abstract_only_note": "Publisher full text returned 403. Total LDL particle number precision and the comparison of ion-mobility LDL-P with ApoB are not in the abstract."
+ },
+ "study": {
+  "design": "laboratory_method_validation",
+  "design_detail": "Description and analytical validation of gas-phase differential electrophoretic macromolecular mobility (ion mobility) after ultracentrifugation to remove albumin; results correlated with standard cholesterol and apolipoprotein methods.",
+  "evidence_type": "method_characteristics",
+  "population": "Serum samples (number not stated in the abstract)",
+  "setting": "Quest Diagnostics Nichols Institute",
+  "sample_size": null,
+  "exposure_or_intervention": "Ion mobility measurement",
+  "comparator": "Standard cholesterol and apolipoprotein assays",
+  "outcomes": [
+   "Analytical precision",
+   "Correlation with standard methods"
+  ],
+  "follow_up": "Not applicable"
+ },
+ "claims": [
+  {
+   "id": "cv-ldl-size-upper",
+   "statement": "Upper bound of intra- and interassay CV for LDL particle size.",
+   "kind": "descriptive",
+   "measure": "cv_upper_bound",
+   "scale": "descriptive",
+   "value": 1.0,
+   "decimals": 1,
+   "unit": "%",
+   "comparison": "none",
+   "population": "Validation samples",
+   "time_horizon": null,
+   "provenance": "reported",
+   "source_location": {
+    "section": "Abstract",
+    "element": "Results",
+    "quote": "Intra- and interassay coefficients of variation for LDL particle size were <1.0%."
+   }
+  },
+  {
+   "id": "cv-subfraction-upper",
+   "statement": "Upper bound of intra- and interassay variation for LDL and HDL subfraction measurements.",
+   "kind": "descriptive",
+   "measure": "cv_upper_bound",
+   "scale": "descriptive",
+   "value": 20,
+   "decimals": 0,
+   "unit": "%",
+   "comparison": "none",
+   "population": "Validation samples",
+   "time_horizon": null,
+   "provenance": "reported",
+   "source_location": {
+    "section": "Abstract",
+    "element": "Results",
+    "quote": "The intra- and interassay variation for LDL and HDL particle subfraction measurements was <20%."
+   }
+  },
+  {
+   "id": "r-im-nonhdl-apob",
+   "statement": "Correlation of ion-mobility non-HDL particle measure with ApoB.",
+   "kind": "descriptive",
+   "measure": "correlation",
+   "scale": "descriptive",
+   "value": 0.92,
+   "decimals": 2,
+   "unit": "Pearson r",
+   "comparison": "ion-mobility non-HDL vs ApoB",
+   "population": "Validation samples",
+   "time_horizon": null,
+   "provenance": "reported",
+   "source_location": {
+    "section": "Abstract",
+    "element": "Results",
+    "quote": "IM-measured non-HDL correlated well with apolipoprotein B (r = 0.92)."
+   }
+  }
+ ],
+ "findings_summary": "Describes Quest Diagnostics' ion mobility method, which counts lipoprotein particles by size after ultracentrifugation. LDL particle size was highly precise (CV <1.0%); LDL and HDL subfraction measurements varied by up to <20% within and between assays; the ion-mobility non-HDL measure correlated with ApoB (r = 0.92).",
+ "limitations": [
+  {
+   "text": "Reviewed from the abstract only.",
+   "source": "identified_in_review"
+  },
+  {
+   "text": "Developed and validated by the laboratory that offers the test (author affiliation: Quest Diagnostics Nichols Institute).",
+   "source": "identified_in_review"
+  },
+  {
+   "text": "The abstract reports precision for size and subfractions, not for total LDL particle number, and correlates ApoB with ion-mobility non-HDL rather than with LDL particle number.",
+   "source": "identified_in_review"
+  },
+  {
+   "text": "A published comment and author reply exist (Clin Chem 2008;54:2086-2089); not reviewed.",
+   "source": "identified_in_review"
+  },
+  {
+   "text": "The method has been refined since 2008 (Williams et al. 2014 report using 'refinements made subsequent to the methods original description').",
+   "source": "identified_in_review"
+  }
+ ],
+ "applicability_constraints": [
+  "Analytical characteristics of the 2008 method; current laboratory performance may differ.",
+  "A correlation coefficient describes agreement across samples, not the size of disagreement for one sample."
+ ],
+ "discrepancies": [],
+ "interpretation": "Ion mobility counts particles by size, a different measurement principle from an ApoB protein assay; its subfraction measurements carry up to ~20% analytical variation, so a single subfraction value has wide uncertainty. The abstract does not say how ion-mobility LDL particle number compares in absolute terms with ApoB.",
+ "review": {
+  "status": "source_verified",
+  "verified_by": "Automated agent (Claude), interactive session; not an independent or clinical review",
+  "verified_on": "2026-10-21",
+  "method": "Each value matched against a verbatim quote from the PubMed abstract, checked by evidence_tools.validate against the cached abstract.",
+  "independent_review": false
+ },
+ "publication": {
+  "status": "local_notebook_only"
+ }
+}

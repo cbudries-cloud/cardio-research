@@ -1,0 +1,6 @@
+# Root context is used only by apps/notebook/Dockerfile: send just the notebook and research.
+*
+!apps/notebook
+!research
+apps/notebook/node_modules
+apps/notebook/.next

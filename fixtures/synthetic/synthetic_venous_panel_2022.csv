@@ -1,0 +1,9 @@
+Test Name,Result,Units,Reference Range,Flag,Collection Date,Report Date,Specimen,Collection Method,Lab,Method,Fasting
+"Cholesterol, Total",214,mg/dL,<200,H,2022-05-10,2022-05-12,Serum,Venipuncture,SYNTHETIC Reference Lab A,,Fasting 12h
+LDL Cholesterol (calculated),141,mg/dL,<100,H,2022-05-10,2022-05-12,Serum,Venipuncture,SYNTHETIC Reference Lab A,Martin-Hopkins,Fasting 12h
+HDL Cholesterol,48,mg/dL,>39,,2022-05-10,2022-05-12,Serum,Venipuncture,SYNTHETIC Reference Lab A,,Fasting 12h
+Triglycerides,126,mg/dL,<150,,2022-05-10,2022-05-12,Serum,Venipuncture,SYNTHETIC Reference Lab A,,Fasting 12h
+Apolipoprotein B,112,mg/dL,<90,H,2022-05-10,2022-05-12,Serum,Venipuncture,SYNTHETIC Reference Lab A,Immunoturbidimetric,Fasting 12h
+Lipoprotein (a),88,nmol/L,<75,H,2022-05-10,2022-05-12,Serum,Venipuncture,SYNTHETIC Reference Lab A,,Fasting 12h
+Hemoglobin A1c,5.4,%,<5.7,,2022-05-10,2022-05-12,Whole blood,Venipuncture,SYNTHETIC Reference Lab A,,
+hs-CRP,<0.3,mg/L,<1.0,,2022-05-10,2022-05-12,Serum,Venipuncture,SYNTHETIC Reference Lab A,,

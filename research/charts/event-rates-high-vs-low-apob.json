@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": "event-rates-high-vs-low-apob",
+  "evidence_id": "sniderman-2024-apob-discordance",
+  "rows": [
+    {
+      "row_id": "r1",
+      "claim_id": "rate-ldl130-low-apob",
+      "group": "LDL-C 130 ± 10 mg/dL",
+      "label": "LDL-C 130",
+      "series": "Low apoB (≤ mean − 1 SD)"
+    },
+    {
+      "row_id": "r2",
+      "claim_id": "rate-ldl130-high-apob",
+      "group": "LDL-C 130 ± 10 mg/dL",
+      "label": "LDL-C 130",
+      "series": "High apoB (≥ mean + 1 SD)"
+    },
+    {
+      "row_id": "r3",
+      "claim_id": "rate-nonhdl160-low-apob",
+      "group": "non-HDL-C 160 ± 10 mg/dL",
+      "label": "non-HDL-C 160",
+      "series": "Low apoB (≤ mean − 1 SD)"
+    },
+    {
+      "row_id": "r4",
+      "claim_id": "rate-nonhdl160-high-apob",
+      "group": "non-HDL-C 160 ± 10 mg/dL",
+      "label": "non-HDL-C 160",
+      "series": "High apoB (≥ mean + 1 SD)"
+    },
+    {
+      "row_id": "r5",
+      "claim_id": "rate-tg115-low-apob",
+      "group": "Triglycerides 115 ± 10 mg/dL",
+      "label": "TG 115",
+      "series": "Low apoB (≤ mean − 1 SD)"
+    },
+    {
+      "row_id": "r6",
+      "claim_id": "rate-tg115-high-apob",
+      "group": "Triglycerides 115 ± 10 mg/dL",
+      "label": "TG 115",
+      "series": "High apoB (≥ mean + 1 SD)"
+    }
+  ],
+  "title": "10-year ASCVD rates for high vs low apoB within the same lipid band",
+  "chart_type": "paired_bars",
+  "data_file": "event-rates-high-vs-low-apob.csv",
+  "x_label": "Lipid band",
+  "y_label": "10-year ASCVD event rate (unit not stated)",
+  "caption": "Only the three pairs whose values are stated in the Results text are shown. Other bars in the paper's Figure 2 are not reproduced because their values are not stated.",
+  "reading_note": "Absolute group rates in UK Biobank over 10 years, comparing the tails of the apoB distribution (beyond ±1 SD). Observational: they show association, not the effect of changing apoB, and they are not anyone's personal risk."
+}
